@@ -1,607 +1,2066 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title>Studenci a wymagania rynku pracy - Stowarzyszenie Koliber - Centrum Analiz</title>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<title>Studenci a wymagania rynku pracy - Stowarzyszenie Koliber - Centrum Analiz</title>
+	<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+		integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<div class="header">
-    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">Centrum Analiz</a>
+	<div class="header">
+		<div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+			<a class="pure-menu-heading" href="">Centrum Analiz</a>
 
-        <ul class="pure-menu-list">
-            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-                <a href="#" class="pure-menu-link">Spis treści</a> 
-                <ul class="pure-menu-children">
-                    <li class="pure-menu-item">
-                        <a href="#wstep" class="pure-menu-link">Wstęp</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="#wprowadzenie" class="pure-menu-link">Wprowadzenie</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="#oczekiwania_ogloszenia" class="pure-menu-link">Oczekiwania pracodawców wobec pracowników w świetle ogłoszeń rekrutacyjnych</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="#oczekiwania_ankiety" class="pure-menu-link">Oczekiwania pracodawców wobec pracowników w świetle badań ankietyowych</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="#konkluzje" class="pure-menu-link">Konkluzje</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</div>
+			<ul class="pure-menu-list">
+				<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" class="pure-menu-link">Spis treści</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item">
+							<a href="#wstep" class="pure-menu-link">Wstęp</a>
+						</li>
+						<li class="pure-menu-item">
+							<a href="#wprowadzenie" class="pure-menu-link">Wprowadzenie</a>
+						</li>
+						<li class="pure-menu-item">
+							<a href="#oczekiwania_ogloszenia" class="pure-menu-link">Oczekiwania pracodawców wobec pracowników w
+								świetle ogłoszeń rekrutacyjnych</a>
+						</li>
+						<li class="pure-menu-item">
+							<a href="#oczekiwania_ankiety" class="pure-menu-link">Oczekiwania pracodawców wobec pracowników w świetle
+								badań ankietyowych</a>
+						</li>
+						<li class="pure-menu-item">
+							<a href="#konkluzje" class="pure-menu-link">Konkluzje</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
 
-<div class="splash-container">
-    <div class="splash">
-        <h1 class="splash-head">Studenci a wymagania rynku pracy</h1>
-        <p class="splash-subhead">
-            Raport nt. preferencji pracodawców względem umiejętności swoich potencjalnych pracowników młodego pokolenia
+	<div class="splash-container">
+		<div class="splash">
+			<h1 class="splash-head">Studenci a wymagania rynku pracy</h1>
+			<p class="splash-subhead">
+				Raport nt. preferencji pracodawców względem umiejętności swoich potencjalnych pracowników młodego pokolenia
 
-        </p>
-        <p>
-            <a href="http://purecss.io" class="pure-button pure-button-primary">Pobierz raport</a>
-        </p>
-    </div>
-</div>
+			</p>
+			<p>
+				<a href="http://purecss.io" class="pure-button pure-button-primary">Pobierz raport</a>
+			</p>
+		</div>
+	</div>
 
-<div class="content-wrapper">
-    <div id="wstep" class="content">
-        <p>Niniejsza publikacja przygotowana przez
-            Centrum Analiz Stowarzyszenia Koliber,
-            stanowi diagnozę potrzeb pracodawców
-            oraz stanu aktualnego rynku pracy
-            w  zakresie konkretnych umiejętności
-            posiadanych przez kandydatów do pracy.
-            Szczególną rolę w opracowaniu poświęcono
-            sytuacji osób młodych, zwłaszcza
-            studentów, rozpoczynających dopiero swoją
-            ścieżkę zawodową.
-        </p>
-        <p>
-            Przedstawione wyniki przeprowadzonej
-            analizy niespełna tysiąca ogłoszeń
-            rekrutacyjnych, a także badań ankietowych
-            wśród przedsiębiorców, w naszym założeniu,
-            mają umożliwić młodym pracownikom
-            należyte poznanie istniejących potrzeb
-            rynkowych, a także przygotowanie się do ról
-            zawodowych, jakie w przyszłości będą pełnić.
-            Dokonane skondensowane przedstawienie
-            zgłaszanych przez poszczególne branże
-            wymogów co do profilu i  posiadanych
-            umiejętności kandydatów, jak również
-            zaprezentowany profil ogólny „idealnego
-            kandydata”, dysponującego umiejętnościami
-            niezbędnymi w  zdecydowanej większości
-            sektorów gospodarki, pozwoli studentom
-            na trafniejsze dopasowanie własnej formy
-            kształcenia do oczekiwań pracodawców.
-            Wierzymy jednocześnie, że dzięki
-            zaangażowaniu uczelni wskazane w raporcie
-            konkluzje wpłyną na realizowaną metodykę
-            nauczania oraz dostosowanie bieżącej
-            oferty edukacyjnej do oczekiwań biznesu. 
-        </p>
-        <p class="is-right">Bartłomiej Baran</p>
-    </div>
-    <h2 id="wprowadzenie" class="content-head is-center">Wprowadzenie</h2>
-    <div class="content">
-        <p>
-            Harmonijne ukształtowanie strony popytowej i  podażowej na współczesnym rynku
-            pracy stanowi jedno z  najistotniejszych wyzwań, które realia gospodarcze stawiają
-            zarówno pracodawcom, potencjalnym pracownikom, a  także państwu. Przez to
-            ostatnie należy rozumieć aparat władzy, dysponujący środkami oddziaływania na
-            zmienne, decydujące bezpośrednio lub pośrednio o  zaistnieniu rynku pracownika,
-            pracodawcy albo, co stanowi rozwiązanie najbardziej optymalne, względnej
-            równowadze w tym zakresie. Wskazana relatywność oznacza, że relacja między stroną
-            pracodawców a  stroną pracowników w  obszarze globalnym nigdy nie osiągnie stanu
-            idealnej symetrii, chociażby ze względu na koniunkturalny charakter bezrobocia czy
-            z uwagi na rozbieżności wynikające z aktualnej sytuacji demograficznej. 
-        </p>
-        <p>
-            Oprócz twardych danych makroekonomicznych, stopnia elastyczności prawnej
-            w  obszarze zatrudniania czy sprawności funkcjonowania instytucji rynku
-            pracy, niebagatelny wpływ na bieżącą kondycję rynku pracy ma przygotowanie
-            i dostosowanie kandydatów do pracy wobec istniejącego zapotrzebowania po stronie
-            pracodawców. Aby uzyskać w  tym przypadku równowagę, niezbędny jest szereg
-            działań, które z  jednej strony pozwolą przedsiębiorcom uwypuklić własne potrzeby
-            i  położyć akcent na zdolności, które w  ich branżach są lub w  dłuższej perspektywie
-            będą nieodzowne, a  z  drugiej strony umożliwią kandydatom do pracy odpowiednio
-            i świadomie ukształtować ścieżkę edukacyjną, która może przybliżyć ich do celu, jakim
-            jest zdobycie wymarzonego stanowiska. Aby ten proces rozwoju w  trafny sposób
-            nakreślić, uformować, a  w  konsekwencji uskutecznić, potrzebne jest jednak jak
-            najwcześniejsze poznanie przez studentów i młodych absolwentów potrzeb rynku. 
-        </p>
-        <p>
-            Z  tego względu celem niniejszej publikacji jest opracowanie diagnozy potrzeb
-            pracodawców oraz stanu obecnego rynku pracy w zakresie konkretnych umiejętności
-            posiadanych przez kandydatów do pracy, ze szczególnym uwzględnieniem
-            pracowników młodego pokolenia. Zadanie to zostało poprzedzone zrealizowaniem
-            badań ankietowych wśród przedsiębiorców, a  także analizą niespełna tysiąca
-            ogłoszeń rekrutacyjnych o  pracę. Wiwisekcja ta, w  naszym założeniu, ma pozwolić
-            na określenie, jakich konkretnie kandydatów do pracy potrzebują pracodawcy,
-            a  w  szczególności tego, jakie umiejętności tacy kandydaci powinni posiadać. Skupia
-            się ona w  szczególności na potrzebach w  zakresie umiejętności zdobywanych
-            w  dużej mierze poza, a  jeśli już, to równolegle do formalnego procesu edukacji, tj.
-            głównie kompetencjach miękkich (np. zdolności przywódcze, systematyczność,
-            zaangażowanie). Ważnym elementem badań jest także zwrócenie uwagi na
-            postępujące zmiany na rynku pracy, związane z  epidemią COVID-19, a  także
-            nowe oczekiwania pracodawców wobec pracowników, związane m.in. z  planami
-            redukcji zatrudnienia. 
-        </p>
-        <p>
-            Wierzymy głęboko, że niniejszy raport, choć w  niewielkim stopniu, przyczyni się do
-            korzystniejszego ukształtowania wzajemnej kooperacji pracodawców i  pracowników.
-            Tym pierwszym przedstawi w skondensowanej formie zgłaszane przez poszczególne
-            branże wymogi co do profilu i  posiadanych umiejętności przez kandydatów,
-            jak również zaprezentuje profil ogólny „idealnego kandydata”, dysponującego
-            umiejętnościami niezbędnymi w zdecydowanej większości sektorów gospodarki. Dzięki 
-            zaangażowaniu zainteresowanych uczelni może to wpłynąć na realizowaną metodykę
-            nauczania oraz dostosowanie bieżącej oferty edukacyjnej do oczekiwań biznesu. 
-        </p>
-        <p>
-            Z  kolei studenci po analizie przedstawionych profili zyskają potrzebne rozeznanie
-            w  zakresie kompetencji, które wymagają dalszego doskonalenia w  celu
-            maksymalizowania szans na zdobycie upragnionej pracy w  zawodzie. Duża rola
-            w  tym zakresie spoczywa także na kołach i  organizacjach studenckich, które będą
-            mogły promować przedstawione wyniki badań wśród braci akademickiej, a  także
-            – w  ramach swojej działalności – należycie przygotowywać studentów do bycia
-            w  przyszłości innowacyjnymi pracownikami. Co istotne, liderzy kół i  organizacji
-            studenckich, promując osiągnięte w  niniejszym raporcie wnioski, sami staną się
-            ekspertami w  zakresie rynku pracy, co może pomóc im w  odniesieniu własnego
-            sukcesu zawodowego.
-        </p>
-        <p>
-            W  pierwszej części opracowania prezentujemy Czytelnikom wyniki analizy ogłoszeń
-            rekrutacyjnych w  celu ich usystematyzowania oraz znalezienia wspólnych
-            mianowników. W  drugiej części konfrontujemy je  z  wywiadem przeprowadzonym
-            wśród przedsiębiorców, co pozwala na jeszcze bardziej precyzyjne sportretowanie
-            wizerunku idealnego kandydata do pracy. Wreszcie w podsumowaniu przedstawiamy
-            konkluzje i  wnioski praktyczne, które mogą być przydatne adeptom nauk w  procesie
-            nieustannego rozwoju i formacji.
-        </p>
-    </div>
-    <h2 id="oczekiwania_ogloszenia" class="content-head is-center">Oczekiwania pracodawców wobec pracowników w 
-        świetle ogłoszeń rekrutacyjnych</h2>
-    <div class="content">
-        <p>
-            Na potrzeby niniejszego opracowania przeanalizowaliśmy 950 losowo wybranych
-            ogłoszeń o  pracę, umieszczonych na jednych z  najpopularniejszych portali dla osób
-            poszukujących zatrudnienia – pracuj.pl oraz olx.pl - z  podziałem na 19 kluczowych
-            branż (po 50 ogłoszeń z każdej):
-        </p>
-        #table1
-        <p>
-            Poniżej prezentujemy wyniki analizy statystycznej ogłoszeń pracodawców
-            i  najczęściej powtarzających się w  nich pożądanych umiejętności pracowników
-            w  poszczególnych branżach wraz z  krótkim komentarzem. W  przypadku każdej
-            z branż sprawdziliśmy po 50 ogłoszeń, na podstawie których przygotowaliśmy tabele
-            i wykresy obrazujące poziom zapotrzebowania na poszczególne umiejętności.
-        </p>
-        <h3>1. Branża IT</h3>
-        #table2
-        #chart1
-        <p>Pracodawcy w  branży IT stawiają spory nacisk na znajomość języka angielskiego
-            jako kluczowego w codziennej komunikacji w tej części gospodarki. Cenione są także
-            kompetencje miękkie (komunikatywność, praca zespołowa, analityczne myślenie,
-            praca pod presją czasu, zarządzanie projektami). Równolegle istotne są tzw. twarde
-            umiejętności (obsługa pakietu biurowego, znajomość języków programowania
-            i projektowania stron internetowych czy umiejętność pracy na bazach danych). </p>
-        <p>Co ciekawe, żadna z  umiejętności nie przekroczyła pułapu 70% powtórzeń, zaś
-            zdecydowana większość z nich plasuje się poniżej 50%. Wskazuje to na zróżnicowany
-            wachlarz pożądanych przez pracodawców umiejętności, choć niewątpliwie jest to
-            także skorelowane z  różnorodną specyfiką poszczególnych stanowisk w  branży IT.
-            Nie odnotowuje się natomiast zdolności, które byłyby wymagane niemal zawsze
-            i  wszędzie, w  związku z  czym katalog ma, szczególnie w  drugiej części zestawienia,
-            relatywnie wyrównany, pod względem sumarycznym, charakter. </p>
-        <p>Warto też dodać, iż większość ogłoszeń o  pracę na portalu <a href="pracuj.pl">pracuj.pl</a>, mimo filtru na
-            Polskę, była opisana w  języku angielskim. Oferowana praca, głównie przez bardzo
-            duże korporacje, miała odbywać się zdalnie albo w  biurowcach w  dużych miastach.
-            Niektórzy pracodawcy oczekiwali 5 lat doświadczenia, a  niekiedy i  więcej. Jeden
-            z oferentów szukał wręcz pracownika z 15-letnim doświadczeniem!</p>
-        <h3>2. Branża finansowa</h3>  
-        #table3
-        #chart2
-        <p>W  sektorach finansowych, obok standardowej znajomości j. angielskiego i  pakietu
-            Office, uwagę zwraca bardzo duży nacisk na kompetencje miękkie (zdolność pracy pod
-            presją czasu, pracy z  klientem, analitycznego myślenia, pracy w  zespole, organizacji
-            pracy własnej, negocjacji). Wskazuje to na charakter zatrudnienia w tej branży, gdzie
-            istotne jest wykształcenie odpowiednich behawioralnych postaw, nawyków oraz
-            adaptacji do specyfiki pracy. </p>
-        <p>Większość ogłoszeń pochodziła od dużych korporacji oraz banków. Spora część z nich
-            była w języku angielskim. Niektóre z ofert były mocno nieprecyzyjne i poza warunkiem
-            ukończenia studiów wyższych nie wskazywały żadnych innych pożądanych
-            kompetencji twardych. W  bardzo wielu przypadkach szukano też asystentów
-            z  oferowaną możliwością późniejszej drogi awansu. Stanowi to celowe odroczenie
-            gratyfikacji, które jednocześnie ma na celu zmotywowanie kandydatów do rzetelnego
-            wykonywania obowiązków w nowym miejscu pracy, tak aby docelowo zostali należycie
-            docenieni i w efekcie mogli wspinać się po kolejnych szczeblach kariery.</p>
-        <h3>3. Branża audytorsko-doradcza</h3>  
-        #table4
-        #chart3
-        <p>Branża audytorsko-doradcza największy nacisk stawia na doświadczenie, tym
-            niemniej – podobnie jak w  branży finansowej – bardzo zauważalne jest położenie
-            akcentu na rozwój kompetencji miękkich. Co jednak symptomatyczne, w ogłoszeniach
-            bardzo oszczędnie opisywano wymagane cechy i zdolności.</p>
-        <p>Oferty pracy charakteryzowała również duża asymetria – większość pracodawców
-            najchętniej zatrudniłaby osoby po studiach, ale zdarzały się również oferty dla osób ze
-            średnim wykształceniem. Godnym spostrzeżenia jest też fakt, iż w  serwisie pracuj.pl
-            na cały kraj odnotowano zaledwie 168 ofert pracy. Może to wskazywać na stosunkowo
-            niewielką liczbę podmiotów na rynku, które działają w tej branży.</p>
-        <h3>4. Branża prawnicza</h3>  
-        #table5
-        #chart4
-        <p>Od adeptów prawa, jak pokazują statystyki, przede wszystkim wymaga się brania
-            odpowiedzialności za powierzone im zadania. Niewątpliwie wiąże się to również
-            z  umiejętnością prowadzenia spraw do końca oraz należytą dozą zaangażowania
-            i  sumienności. Za niemal równie istotną uznawana jest świetna znajomość języka
-            angielskiego, z  zaznaczeniem, iż chodzi o  poziom C1, czyli drugi najwyższy w  skali
-            CEFR (Common European Framework). Niewątpliwie jest to umiejętność przydatna,
-            zarówno w trakcie rozmów biznesowych, prowadzenia spraw z udziałem kontrahentów
-            zza granicy, ale również tzw. researcherów, czyli przygotowywania opracowań
-            konkretnych prawniczych zagadnień.</p>
-        <p>Za cenną kompetencję uznano także umiejętność pracy pod presją czasu, co
-            niewątpliwie przydaje się w  kontekście pracy w  obszarze legislacyjnym ze względu
-            na częstą nagłość podejmowanych decyzji i krótki okres na przygotowanie się do np.
-            posiedzeń komisji parlamentarnych. Analogicznie zdolność ta będzie nieodzowna
-            również prawnikom procesowym, którzy muszą sprostać zakreślonym terminom na
-            sporządzenie apelacji czy skargi kasacyjnej. </p>
-        <p>Warto zwrócić też uwagę na potrzebę posiadania rozwiniętych umiejętności
-            komunikacyjnych, które szczególnie w tym fachu przydają się podczas prezentowania
-            stanowisk czy argumentowania za podnoszonymi tezami. Zdolność ta ma również
-            przełożenie w  momentach kontaktu z  mediami, gdzie dodatkowo często przydaje
-            się talent do wyważenia prawniczej precyzji, a  jednocześnie nadania komunikatowi
-            odpowiednio przyswajalnej wartości dla odbiorcy.</p>
-        <p>Niewątpliwie substancjalne znaczenie ma także zdolność do jednoczesnej
-            koordynacji wielu spraw. Jest to wartość dodana, która przydaje się w dużej mierze na
-            stanowiskach menedżerskich, ale również w  stricte prawniczym fachu. Wspomniany
-            tzw. multitasking, czyli zapanowanie i  zapamiętanie mnóstwa różnorodnych faktów
-            i czynności do wykonania, staje się poważną kartą przetargową podczas rekrutacji. </p>
-        <p>Wszystko to jednak nie zapewni sukcesu, jeżeli pracownik nie będzie mógł pochwalić
-            się znakomitą wiedzą i  przygotowaniem prawniczym. I  mimo że ten element
-            w ogłoszeniach nie należy do najczęściej powtarzanych (być może uchodząc za wręcz
-            oczywisty), o tyle bez wątpienia stanowi jedno z clou sukcesu w tej branży - naturalnie
-            obok doświadczenia zawodowego.</p>
-        <h3>5. Branża księgowa</h3> 
-        #table6
-        #chart5
-        <p>W  branży księgowej za fundamentalną umiejętność uznano znajomość pakietu MS
-            Office – wiedzy w  tym zakresie wymagali prawie wszyscy pracodawcy (92%). Bardzo
-            istotne było również posiadane doświadczenie (minimum 2-letnie) i  znajomość
-            języka angielskiego na poziomie C1. Zdecydowanie niżej sklasyfikowano kompetencje
-            miękkie. Pojawiły się również wymagania dotyczące znajomości fachowych systemów
-            księgowych, co wskazuje na potrzebę specjalizacji w branży. </p>
-        <p>Co ciekawe, w niemal 1/3 ogłoszeń proszono o zaświadczenie o niekaralności. Pokazuje
-            to, że kandydaci powinni być osobami nieskazitelnego charakteru o  wysokim
-            poziomie zaufania.</p>
-        <h3>6. Branża robotyki przemysłowej</h3> 
-        #table7
-        #chart6
-        <p>Branża robotyki przemysłowej zdecydowany nacisk stawia na konkretne umiejętności
-            i  uprawnienia. Wśród dziewięciu najczęściej powtarzanych warunków rekrutacyjnych
-            pojawiła się wyłącznie jedna pozycja, dotycząca kompetencji miękkiej. Świadczy
-            to o charakterze zadań i wyzwań, jakie stawiane są przed pracownikami w tej gałęzi
-            gospodarki. Relatywnie mało istotne są w tym obszarze umiejętności tworzenia relacji
-            interpersonalnych czy kształtowania współpracy zespołowej. Za znacznie ważniejsze
-            uznawane są fachowość i profesjonalizm.</p>
-        <p>Przedstawiony wachlarz pożądanych umiejętności pozwala zarekomendować
-            adeptom nauk technicznych skupienie się przede wszystkim na podnoszeniu tych
-            najbardziej wymiernych kwalifikacji zawodowych. Nie zmienia to jednak faktu, że
-            łatwość w  nawiązywaniu relacji czy samoorganizacji pracy własnej również będą
-            przydatne, mimo iż cenione pragmatycznie w mniejszym stopniu.</p>
-        <h3>7. Branża prywatnego nauczania</h3> 
-        #table8
-        #chart7
-        <p>W  szkolnictwie prywatnym najwyżej cenione jest doświadczenie zawodowe, a  także
-            komunikatywność. Komunikatywność stanowi o  charakterze tego zawodu, jakim
-            jest potrzeba przekazywania wiedzy w  możliwie jak najbardziej rzetelny sposób
-            przy jednoczesnej przystępności formy. Z  tego samego powodu w  ogłoszeniach
-            pojawiały się również wymogi posiadania umiejętności przekazywania wiedzy,
-            a także rzetelności. </p>
-        <p>Bardzo wielu pracodawców wskazywało również na serdeczne podejście do uczniów
-            i rodziców, co niewątpliwie ma kluczowe znaczenie dla budowania wzajemnej relacji.
-            Jednocześnie w  połowie ogłoszeń znalazły się wymagania dotyczące dodatkowych
-            kursów. Świadczy to o  potrzebie nieustannego pogłębiania swojej wiedzy
-            i podnoszenia kwalifikacji</p>
-        <h3>8. Branża sportowa</h3> 
-        #table9
-        #chart8
-        <p>Pracodawcy, poszukując trenerów czy instruktorów, największą wagę przywiązują do
-            posiadanych uprawnień oraz doświadczenia. Pozostałe kryteria mają zdecydowanie
-            mniejsze praktyczne znaczenie. </p>
-        <p>Do tych bardziej uchwytnych należy posiadanie książeczki zdrowia do celów
-            sanitarno-epidemiologicznych, potocznie zwanej książeczką sanepidowską,
-            znajomość języka angielskiego, zaświadczenie o  niekaralności, a  także prawo jazdy
-            kat. B. Ceniona jest także pracowitość i  otwartość, choć oczywiście nie są to cechy
-            łatwo mierzalne.</p>
-        <h3>9. Branża transportowa</h3> 
-        #table10
-        #chart9
-        <p>Do pracy w biurze transportowym – w ocenie pracodawców publikujących ogłoszenia
-            rekrutacyjne – niezbędna jest świetna znajomość języka angielskiego. Niewątpliwie
-            wynika to ze specyfiki pracy, która polega na częstych kontaktach z  kontrahentami
-            zagranicznymi. Z tego samego powodu w zestawieniu pojawia się również znajomość
-            drugiego języka obcego. Pozwala to zachęcić studentów do intensywniejszego
-            kształcenia się w umiejętnościach lingwistycznych.</p>
-        <p>Wysoko cenione są także znajomość MS Office czy dobrze rozwinięte umiejętności
-            komunikacyjne. Szczególną uwagę zwrócić należy na potrzebę znajomości realiów
-            rynku oraz zdolność do budowania i  dalszego podtrzymywania długotrwałych relacji
-            z  klientem. Wydaje się, że są to umiejętności kluczowe z  punktu widzenia rozwoju
-            przedsiębiorstw i współpracy z otoczeniem biznesowym. </p>
-        <h3>10. Branża budowlana</h3> 
-        #table11
-        #chart10
-        <p>W  branży budowlanej 90% ofert podkreślało znaczenie doświadczenia w  zakresie
-            zarządzania kapitałem ludzkim, a także realizacji projektów o określonych terminach.
-            To drugie jest w  pełni zrozumiałe, mając na względzie, iż w  przypadku tej branży
-            często zakreślone są konkretne terminy zakończenia budowy, a  ich przekroczenie
-            rodzi niejednokrotnie odpowiedzialność finansową. Przypisanie natomiast tak
-            kolosalnego znaczenia doświadczeniu w  zarządzaniu zespołem, naturalnie oprócz
-            wartości samych kompetencji menedżerskich, może potencjalnie świadczyć
-            o  dodatkowej specyfice zarządzania personelem w  tej właśnie branży, wynikającej
-            z czynnika ludzkiego. </p>
-        <p>Pracodawcy bardzo cenią sobie znajomość profesjonalnego oprogramowania,
-            posiadanie stosownych uprawnień budowlanych, a  także znajomość branży. Połowa
-            ogłoszeń wskazała również na istotną rolę umiejętności nawiązywania relacji
-            w zespole, co niewątpliwie skorelowane jest z pierwszą pozycją w zestawieniu.
-            </p>
-        <p>Warto zauważyć, że w tabeli zabrakło oczekiwań co do dyspozycyjności pracowników,
-            rozumianej jako mobilność. Należy pamiętać, że budowy zwykle prowadzone
-            są w  różnych miejscach, nie tylko regionu, ale i  kraju, a  niekiedy nawet poza
-            granicami. Elastyczność w  tym zakresie, na którą nie każdy – z  przyczyn osobistych
-            i  rodzinnych – może sobie pozwolić, powinna w  naszej ocenie stanowić jeden
-            z  wyróżników rekrutacyjnych, choć element ten naturalnie nie musi występować
-            w każdym przypadku.</p>
-        <h3>11. Branża medialna</h3> 
-        #table12
-        #chart11
-        <p>W branży związanej z mediami za najważniejszą wskazywaną w ogłoszeniach cechę
-            idealnego kandydata uznawane są znakomite umiejętności komunikacyjne – zarówno
-            w  mowie jak i  piśmie. Ceniony jest również dotychczasowy dorobek. Bardzo ważny
-            w  tym dziale gospodarki jest zatem warsztat i  zdobyte doświadczenie, w  związku
-            z czym wskazane jest szkolenie i praktykowanie w zawodzie od jak najmłodszych lat. 
-            </p>
-        <p>Co ciekawe, w  zestawieniu nie pojawia się wymóg specjalizacji w  określonych
-            obszarach tematycznych. Oczywiście inna jest specyfika pracy w  redakcjach
-            zajmujących się szerokim spektrum tematycznym, a  inna w  np. czasopismach
-            branżowych, tym niemniej w  naszej ocenie i  tak warto pamiętać o  powtarzanej
-            niekiedy przez praktyków zasadzie, że dziennikarz powinien wiedzieć coś o wszystkim
-            i wszystko o czymś. </p>
-        <p>Warto też odnotować, iż w  niektórych ogłoszeniach nie było praktycznie żadnych
-            wymaganych umiejętności poza umiejętnościami komunikacji. Może to wskazywać na
-            ogromną wagę predyspozycji osobistych – umiejętności warsztatowe zawsze można
-            wszak później wyćwiczyć w praktyce.</p>
-        <h3>12. Branża reklamowa</h3>
-        #table13
-        #chart12 
-        <p>Branża reklamowa stawia nacisk na kreatywność i  doświadczenie. Zadaniem
-            fachowców pracujących w  tym obszarze jest kształtowanie nowych
-            nieschematycznych rozwiązań w  dziedzinie reklamy i  marketingu, w  związku z  czym
-            jest to w pełni uzasadnione. Ogromną rolę w tej branży pełnią media społecznościowe,
-            dlatego też niemal ¾ ogłoszeń zawierało oczekiwania pod tym kątem. Za istotne
-            uznano również zdolności graficzne, które niewątpliwie przydają się przy tworzeniu
-            materiałów reklamowych.</p>
-        <p>W  ponad 70% ogłoszeń wskazywano również na znaczenie zdolności
-            interpersonalnych, co niewątpliwie wynika ze specyfiki branży, której zadaniem
-            jest komunikowanie przygotowanych treści w  przystępny i  niebanalny sposób.
-            Umiejętności te przydają się także w czasie pracy zespołowej.</p>
-        <p>Niemal połowa ogłoszeń operowała również wymogiem wiedzy z  zakresu
-            performance marketingu oraz CRM (customer relationship management), czyli
-            zarządzania relacjami z klientem. Adeptom branży zalecamy zatem stałe podnoszenie
-            wiedzy w  zakresie teorii i  praktyk marketingowych, a  także zdolności tworzenia
-            i utrzymywania relacji biznesowych.</p>
-        <p>Pozostałe kompetencje miękkie, takie jak umiejętność dotrzymywania terminów,
-            przeprowadzanie prezentacji czy zdolności analityczne pojawiły się w  mniej niż 40%
-            ogłoszeń. Warto zauważyć, że wśród najczęściej poszukiwanych cech kandydatów
-            nie znalazła się dyspozycyjność. To zastanawiające, tym bardziej, że umiejętne
-            zarządzanie social media wymaga pracy również poza schematycznym rozkładem
-            godzinowym. Jednocześnie wiele wydarzeń, m.in. kulturalnych, sportowych, niekiedy
-            także biznesowych, w które mogą być zaangażowani pracownicy branży, odbywa się
-            wieczorami lub w weekendy.</p>
-        <h3>13. Branża gastronomiczna</h3>
-        #table14
-        #chart13 
-        <p>W  przeciwieństwie do poprzedniej branży, w  gastronomii wymóg dyspozycyjności
-            pojawia się na pierwszym miejscu. Wiąże się to z  imprezami okolicznościowymi,
-            które zazwyczaj odbywają się w  weekendy oraz w  godzinach wieczorno-nocnych.
-            Równie ceniona jest dobra organizacja pracy. Za ważne uchodzi także posiadane
-            doświadczenie (ponad 80% ogłoszeń), umiejętność pracy w  zespole (76%) oraz
-            odporność na stres (62%).</p>
-        <p>Kolejne wymagania pod względem częstotliwości pojawiania się w  ogłoszeniach
-            rekrutacyjnych pozostają już w  ogromnej dysproporcji. Biegła znajomość
-            j. angielskiego została odnotowana zaledwie w  niespełna 30% ogłoszeń, a  wysoka
-            kultura osobista w  nieco ponad 20%. Warta spostrzeżenia jest pożądana wiedza
-            w  zakresie organizacji i  rozliczania dużych wydarzeń, co ma niebagatelne znaczenie
-            z punktu widzenia menedżerów np. domów weselnych.</p>
-        <h3>14. Branża turystyczna</h3>
-        #table15
-        #chart14
-        <p>W  branży turystycznej przede wszystkim warto postawić szczególny nacisk na
-            znajomość języków, przede wszystkim angielskiego. Umiejętność tę wyłuszczono
-            w  prawie 90% ogłoszeń. Ważne jest również co najmniej roczne doświadczenie
-            oraz zdolności interpersonalno-komunikacyjne. Nieco niżej sklasyfikowano ogładę
-            i kulturę osobistą, zarządzanie zespołem czy zdolność pracy pod presją. Tylko w 26%
-            ogłoszeń pojawił się wymóg znajomości specjalistycznych programów hotelowych:
-            Rehot i Profitroom.</p>
-        <p>Statystyki jednoznacznie wskazują, że – obok standardowej już znajomości
-            j. angielskiego, pakietu Office oraz doświadczenia – kluczowe w branży turystycznej są
-            zdecydowanie kompetencje miękkie.</p>
-        <h3>15. Branża opieki zdrowotnej</h3>
-        #table16
-        #chart15
-        <p>Najważniejszą cechą wskazywaną przez rekruterów w  branży opieki zdrowotnej jest
-            cierpliwość. Pojawiła się ona niemal w ¾ ogłoszeń. Stanowi ona jeden z fundamentów
-            opiekuńczego i  troskliwego podejścia do skutecznej pomocy chorym. Pozostałe
-            umiejętności dotyczą pracy z  niepełnosprawnymi, zarządzania czasem czy
-            życzliwości. Ciekawą zdolnością jest prowadzenie zajęć tematycznych i kreatywność,
-            co może mieć szczególne znaczenie przy pracy z najmłodszymi. </p>
-        <p>Co ciekawe, większość analizowanych ogłoszeń była bardzo nieprecyzyjna i  nie
-            wymagała niczego konkretnego. Na podstawie ich rekonesansu wydawałoby
-            się wręcz, że każdy może wykonywać ten zawód. Z  kolei ani razu nie pojawiło
-            się ogłoszenie na wyższe stanowisko kierownicze, co wskazuje z  jednej strony
-            na ogromną podaż stanowisk o  niskich kwalifikacjach zawodowych, a  z  drugiej
-            o preferowanym sposobie poszukiwania kandydatów na wyższych stanowiskach poza
-            serwisami internetowymi.</p>
-        <h3>16. Branża sprzedaży bezpośredniej</h3>
-        #table17
-        #chart16
-        <p>W  sprzedaży bezpośredniej najwyżej punktowane jest doświadczenie oraz
-            pozyskiwanie i  utrzymywanie relacji z  klientem. Cechy te stanowią o  sukcesie w  tej
-            gałęzi gospodarki. Za ważne uznano także zdolność do pracy pod presją czasu i zadań
-            czy umiejętności negocjacyjne. </p>
-        <p>Co ciekawe, znajomość j. angielskiego w tej branży znajduje się na ostatnim miejscu
-            (pojawiła się zaledwie w  niespełna co piątym ogłoszeniu). Może to wskazywać na,
-            w znaczącym stopniu, krajowy charakter działalności większości przedsiębiorców.</p>
-        <h3>17. Branża chemiczna i kosmetologiczna</h3>
-        #table18
-        #chart17
-        <p>Umiejętność wykonywania zabiegów kosmetycznych, czyli praktyczna zdolność
-            wykonywania zawodu, została uznana za absolutnie kluczową i praktycznie niezbędną.
-            Została ona wskazana w  96% przypadków, co stanowi najwyższy odsetek spośród
-            wszystkich analizowanych branż. </p>
-        <p>Za ważną uznawano również umiejętność nawiązywania relacji z klientem (84%) oraz
-            znajomość produktów kosmetycznych i  rynku kosmetycznego (66%). Doświadczenie
-            i  dodatkowe certyfikaty czy szkolenia zostały uwzględnione jako relatywnie mniej
-            istotne. Może to pośrednio wskazywać na zwiększony popyt na pracowników
-            w  tej branży, w  związku z  czym odpowiednia certyfikacja staje się drugorzędna –
-            najistotniejsze to faktyczne podstawowe umiejętności.</p>
-        <h3>18. Branża badań i rozwoju</h3>
-        #table19
-        #chart18
-        <p>Branża badań i  rozwoju najczęściej wskazuje w  ogłoszeniach na umiejętność
-            pracy zespołowej oraz znajomość języków programowania. Obok kompetencji
-            miękkich dosyć często pojawiają się też: znajomość metod statystycznych, SQL czy
-            doświadczenie w pracy z dużymi bazami danych. </p>
-        <p>W  tej branży stosunkowo popularne są zatem wymagania odnoszące się do
-            konkretnych, twardych umiejętności, wymagających specjalistycznej wiedzy. Widać
-            tutaj wyraźne podobieństwa do branży robotyki przemysłowej czy branży IT.</p>
-        <h3>19. Branża dietetyczna</h3>
-        #table20
-        #chart19
-        <p>W  zawodzie dietetyka, co zaskakujące, najbardziej poszukiwane są umiejętności
-            dotyczące pakietu MS Office. Na drugim miejscu uplasowały się zdolności
-            interpersonalne, a  na trzecim organizacja pracy własnej w  sposób uwzględniający
-            jednoczesną współpracę z wieloma klientami równolegle. </p>
-        <p>Znajomość specjalistycznego programu Jadłospis2 okazała się ważna zaledwie
-            w  przypadku nieco ponad ¼ ogłoszeń, w  związku z  czym zdaje się nie odgrywać
-            w  tym fachu kluczowej roli. Ewentualnie pracodawcy wychodzą z  założenia, że jego
-            nauczenie się to tylko kwestia czasu i dobrych chęci.</p>
-        <h3>Łącznie (950 ogłoszeń):</h3>
-        #table21
-        #chart20
-        <p>Z  sumarycznego łącznego zestawienia 950 ogłoszeń wynika, iż, mówiąc
-            w  uproszczeniu, prawie co drugi pracodawca najbardziej ceni sobie posiadane
-            doświadczenie zawodowe. Wskazuje to na ogromną wartość, jaką są praktyki i  staże
-            zawodowe – od jak najmłodszych lat. </p>
-        <p>Niemal podobną częstotliwość pojawiania się miały wymagania dotyczące znajomości
-            pakietu MS Office oraz dobrej znajomości j. angielskiego. Należy je  uznać za
-            powszechny standard – właściwie prawie niezależnie od branży. W młodym pokoleniu
-            umiejętności te na szczęście rozwinięte są przynajmniej na podstawowym poziomie.
-            Jednak w przypadku osób, które mają w tym zakresie jeszcze spore pole do dalszego
-            rozwoju, niewątpliwie warto ten trud podjąć. </p>
-        <p>Wielokrotnie pojawiała się również umiejętność pracy pod presją czasu, co ma
-            szczególne znaczenie w  przypadku stanowisk, dla których istnieje ściśle określony
-            czas reagowania lub przygotowania produktu finalnego. Mimo iż mało kto lubi się
-            spieszyć czy stresować, to jednak warto pamiętać, iż niekiedy wyjście choć odrobinę
-            z własnej strefy komfortu może zadecydować o dostaniu znacznie lepszej pracy</p>
-        <p>W co dziesiątym ogłoszeniu pojawia się także prawo jazdy kat. B. W obecnych czasach
-            jest to również praktycznie standard, tym niemniej nie zawsze jest on wymagany
-            na stanowisku pracy, stąd jego dalsza pozycja. Warto też dodać, iż w  niektórych
-            przypadkach – np. w przypadku kierowców w administracji publicznej – oprócz prawa
-            jazdy konieczne będą ważne badania psychotechniczne</p>
-    </div>
-    <h2 id="oczekiwania_ankiety" class="content-head is-center">Oczekiwania pracodawców wobec pracowników w świetle badań ankietowych</h2>
-    <div class="content">
-        <p>W  celu porównania oczekiwań pracodawców, które wyłaniają się z  ogłoszeń
-            pracodawców, rozesłaliśmy do kilkuset przedsiębiorców z  poszczególnych branż
-            dedykowane ankiety. Zapytaliśmy ich, jakich umiejętności oczekują od pracowników,
-            a także w jakim zakresie.</p>
-        <ul class="boxes">
-            <li class="box">Kompetencje miękkie</li>
-            <li class="box">Języki obce</li>
-            <li class="box">Zdobyte doświadzenie</li>
-            <li class="box">Dodatkowe umiejętności</li>
-        </ul>
-        <h3>1. Kompetencje miękkie</h3>
-        <p>Wielokrotnie wskazywano na umiejętność pracy pod presją czasu oraz w  grupie,
-            a  także odporność na stres. Podkreślano także znaczenie komunikatywności,
-            elastyczności oraz posiadania prawa jazdy kat. B.</p>
-        <h3>2. Języki obce</h3>
-        <p>Przedsiębiorcy stawiają nacisk przede wszystkim na j. angielski. Zależnie od branży
-            jest to poziom zaawansowany (C1) albo wyłącznie komunikatywny (A2/B1). Drugi język
-            nie został uznany za obligatoryjny w żadnej z branż. Niewątpliwie stanowi on jednak
-            wartość dodaną, a  preferencje w  jego zakresie są już uzależnione od konkretnych
-            stanowisk oraz specyfiki przedsiębiorstw. </p>
-        <h3>3. Zdobyte doświadczenie</h3>
-        <p>Za dosyć istotną uznawano przy rekrutacji działalność potencjalnego pracownika
-            w organizacjach studenckich. Ważne było również zdobyte doświadczenie praktyczne,
-            przebyte szkolenia, a  nawet wiedza zdobyta w  sposób samodzielny (bez formalnego
-            wykształcenia w  danym kierunku). W  wielu przypadkach pracodawcy byliby skłonni
-            zatrudnić osobę po technikum – wszystko oczywiście jednak jest uzależnione od
-            sektora oraz konkretnych stanowisk.</p>
-        <h3>4. Dodatkowe umiejętności</h3>
-        <p>Zależnie od branży wskazywano na konieczność posiadania dedykowanych
-            umiejętności. W  IT była to znajomość JavaScript, Python czy JAVA, w  księgowości
-            wykształcenie MBA i  rozeznanie w  systemach podatkowych, a  w  branży prawnej
-            np. ukończenie prawniczego kursu języka obcego czy uprawnienia mediatora.
-            W odniesieniu do magistrów i licencjatów/inżynierów większe szanse na zatrudnienie
-            mają magistrowie.</p>
-        <p>Co istotne, w wielu przypadkach pracodawcy chętnie przyjęliby do pracy osobę, która
-            ma stopień naukowy doktora w dziedzinie z branży. Wskazuje to, że przedsiębiorcy nie
-            obawiają się osób z niejednokrotnie większą wiedzą teoretyczną od siebie. Nie traktują
-            ich jako potencjalnego zagrożenia, ale wręcz przeciwnie - jako szansę dla firmy na
-            dalszy rozwój. </p>
-    </div>
-    <h2 id="konkluzje" class="content-head is-center">Konkluzje</h2>
-    <div class="content">
-        <p>Porównanie ogłoszeń o  pracę z  wynikami badań ankietowych pokazało, że korelują
-            one ze sobą w  sposób harmonijny, a  wskazywane w  obu miejscach pożądane cechy
-            pracowników są generalnie tożsame. Najistotniejsze kompetencje zatrudnianych
-            osób oscylują tym samym wokół czterech głównych grup: kompetencji miękkich,
-            języków obcych, zdobytego doświadczenia oraz wykształcenia formalnego
-            i dodatkowych umiejętności. </p>
-        <p>Niewątpliwie specyfika każdego pracodawcy jest nieco odmienna. Inaczej będą
-            się także kształtować oczekiwania w  odniesieniu do stanowisk menedżerskich
-            i  eksperckich, a  inaczej w  stosunku do stanowisk liniowych. Każda z  wymienionych
-            branż ma również swoje własne wyprofilowane oczekiwania wobec przyjmowanych
-            pracowników oraz swoją unikalną charakterystykę. Nie zmienia to jednak faktu, że
-            mają one w  wielu miejscach wspólny mianownik. Należy do niego np. częsty wymóg
-            posiadania doświadczenia pracy w branży czy znajomości pakietu Office.</p>
-        <p>Mając na uwadze, że nasza publikacja adresowana jest przede wszystkim do
-            studentów, pragniemy uczulić Was na ogromną wartość, jaką niesie ze sobą
-            podnoszenie kwalifikacji zawodowych we wszystkich spośród wymienionych
-            obszarów. Oczywiście do najbardziej oczywistych należy wykształcenie formalne
-            i  dodatkowe kursy, szkolenia, studia podyplomowe, aplikacje itd. Niewątpliwie duży
-            nacisk przywiązany jest także do znajomości języków obcych. W  wielu przypadkach
-            doświadczenie zawodowe zdobywane jest jak najwcześniej. Warto tutaj zachęcić, aby,
-            w  miarę możliwości, ukierunkowywać się jak najwcześniej i  zamiast przysłowiowego
-            sprzedawania popcornu w  kinie starać się o  pracę i  praktyki w  swoich branżach.
-            Niewątpliwie czasem jest to utrudnione ze względu na brak wymaganych kompetencji
-            w trakcie procesu nauki (np. w zawodach medycznych), wielokrotnie też studenci nie
-            są jeszcze zdecydowani na określoną ścieżkę rozwoju albo chcą poeksperymentować.
-            Warto jednak orbitować w okolicach określonych branż. To na pewno się opłaci.
-            </p>
-        <p>Na koniec chcielibyśmy zwrócić także uwagę na ogromne znaczenie rozwoju, często
-            pomijanych, kompetencji miękkich, w tym kompetencji społecznych. Wiele konfliktów,
-            na jakie napotykamy później w  pracy, ma swoje podłoże niekiedy właśnie w  braku
-            należytych umiejętności współpracy z  innymi, ale także umiejętnego radzenia sobie
-            z  odmiennością, w  tym różnymi stylami pracy. Warto także przepracowywać własne
-            schematy poznawcze, ucząc się skutecznej komunikacji, ugodowego podejścia,
-            wyrozumiałości, tolerancji i  zaufania. Cenne jest również eliminowanie zbędnych
-            nawyków, takich jak prokrastynacja, nieterminowość czy brak solidności. </p>
-        <p>Wierzymy głęboko, że skumulowanie tych wszystkich pozytywnych prorozwojowych
-            działań pozwoli od razu po studiach, a może nawet i wcześniej, znaleźć pracę marzeń.
-            Czego Wam serdecznie życzymy.</p>
-    </div>
-</div>
+	<div class="content-wrapper">
+		<div id="wstep" class="content">
+			<p>Niniejsza publikacja przygotowana przez
+				Centrum Analiz Stowarzyszenia Koliber,
+				stanowi diagnozę potrzeb pracodawców
+				oraz stanu aktualnego rynku pracy
+				w zakresie konkretnych umiejętności
+				posiadanych przez kandydatów do pracy.
+				Szczególną rolę w opracowaniu poświęcono
+				sytuacji osób młodych, zwłaszcza
+				studentów, rozpoczynających dopiero swoją
+				ścieżkę zawodową.
+			</p>
+			<p>
+				Przedstawione wyniki przeprowadzonej
+				analizy niespełna tysiąca ogłoszeń
+				rekrutacyjnych, a także badań ankietowych
+				wśród przedsiębiorców, w naszym założeniu,
+				mają umożliwić młodym pracownikom
+				należyte poznanie istniejących potrzeb
+				rynkowych, a także przygotowanie się do ról
+				zawodowych, jakie w przyszłości będą pełnić.
+				Dokonane skondensowane przedstawienie
+				zgłaszanych przez poszczególne branże
+				wymogów co do profilu i posiadanych
+				umiejętności kandydatów, jak również
+				zaprezentowany profil ogólny „idealnego
+				kandydata”, dysponującego umiejętnościami
+				niezbędnymi w zdecydowanej większości
+				sektorów gospodarki, pozwoli studentom
+				na trafniejsze dopasowanie własnej formy
+				kształcenia do oczekiwań pracodawców.
+				Wierzymy jednocześnie, że dzięki
+				zaangażowaniu uczelni wskazane w raporcie
+				konkluzje wpłyną na realizowaną metodykę
+				nauczania oraz dostosowanie bieżącej
+				oferty edukacyjnej do oczekiwań biznesu.
+			</p>
+			<p class="is-right">Bartłomiej Baran</p>
+		</div>
+		<h2 id="wprowadzenie" class="content-head is-center">Wprowadzenie</h2>
+		<div class="content">
+			<p>
+				Harmonijne ukształtowanie strony popytowej i podażowej na współczesnym rynku
+				pracy stanowi jedno z najistotniejszych wyzwań, które realia gospodarcze stawiają
+				zarówno pracodawcom, potencjalnym pracownikom, a także państwu. Przez to
+				ostatnie należy rozumieć aparat władzy, dysponujący środkami oddziaływania na
+				zmienne, decydujące bezpośrednio lub pośrednio o zaistnieniu rynku pracownika,
+				pracodawcy albo, co stanowi rozwiązanie najbardziej optymalne, względnej
+				równowadze w tym zakresie. Wskazana relatywność oznacza, że relacja między stroną
+				pracodawców a stroną pracowników w obszarze globalnym nigdy nie osiągnie stanu
+				idealnej symetrii, chociażby ze względu na koniunkturalny charakter bezrobocia czy
+				z uwagi na rozbieżności wynikające z aktualnej sytuacji demograficznej.
+			</p>
+			<p>
+				Oprócz twardych danych makroekonomicznych, stopnia elastyczności prawnej
+				w obszarze zatrudniania czy sprawności funkcjonowania instytucji rynku
+				pracy, niebagatelny wpływ na bieżącą kondycję rynku pracy ma przygotowanie
+				i dostosowanie kandydatów do pracy wobec istniejącego zapotrzebowania po stronie
+				pracodawców. Aby uzyskać w tym przypadku równowagę, niezbędny jest szereg
+				działań, które z jednej strony pozwolą przedsiębiorcom uwypuklić własne potrzeby
+				i położyć akcent na zdolności, które w ich branżach są lub w dłuższej perspektywie
+				będą nieodzowne, a z drugiej strony umożliwią kandydatom do pracy odpowiednio
+				i świadomie ukształtować ścieżkę edukacyjną, która może przybliżyć ich do celu, jakim
+				jest zdobycie wymarzonego stanowiska. Aby ten proces rozwoju w trafny sposób
+				nakreślić, uformować, a w konsekwencji uskutecznić, potrzebne jest jednak jak
+				najwcześniejsze poznanie przez studentów i młodych absolwentów potrzeb rynku.
+			</p>
+			<p>
+				Z tego względu celem niniejszej publikacji jest opracowanie diagnozy potrzeb
+				pracodawców oraz stanu obecnego rynku pracy w zakresie konkretnych umiejętności
+				posiadanych przez kandydatów do pracy, ze szczególnym uwzględnieniem
+				pracowników młodego pokolenia. Zadanie to zostało poprzedzone zrealizowaniem
+				badań ankietowych wśród przedsiębiorców, a także analizą niespełna tysiąca
+				ogłoszeń rekrutacyjnych o pracę. Wiwisekcja ta, w naszym założeniu, ma pozwolić
+				na określenie, jakich konkretnie kandydatów do pracy potrzebują pracodawcy,
+				a w szczególności tego, jakie umiejętności tacy kandydaci powinni posiadać. Skupia
+				się ona w szczególności na potrzebach w zakresie umiejętności zdobywanych
+				w dużej mierze poza, a jeśli już, to równolegle do formalnego procesu edukacji, tj.
+				głównie kompetencjach miękkich (np. zdolności przywódcze, systematyczność,
+				zaangażowanie). Ważnym elementem badań jest także zwrócenie uwagi na
+				postępujące zmiany na rynku pracy, związane z epidemią COVID-19, a także
+				nowe oczekiwania pracodawców wobec pracowników, związane m.in. z planami
+				redukcji zatrudnienia.
+			</p>
+			<p>
+				Wierzymy głęboko, że niniejszy raport, choć w niewielkim stopniu, przyczyni się do
+				korzystniejszego ukształtowania wzajemnej kooperacji pracodawców i pracowników.
+				Tym pierwszym przedstawi w skondensowanej formie zgłaszane przez poszczególne
+				branże wymogi co do profilu i posiadanych umiejętności przez kandydatów,
+				jak również zaprezentuje profil ogólny „idealnego kandydata”, dysponującego
+				umiejętnościami niezbędnymi w zdecydowanej większości sektorów gospodarki. Dzięki
+				zaangażowaniu zainteresowanych uczelni może to wpłynąć na realizowaną metodykę
+				nauczania oraz dostosowanie bieżącej oferty edukacyjnej do oczekiwań biznesu.
+			</p>
+			<p>
+				Z kolei studenci po analizie przedstawionych profili zyskają potrzebne rozeznanie
+				w zakresie kompetencji, które wymagają dalszego doskonalenia w celu
+				maksymalizowania szans na zdobycie upragnionej pracy w zawodzie. Duża rola
+				w tym zakresie spoczywa także na kołach i organizacjach studenckich, które będą
+				mogły promować przedstawione wyniki badań wśród braci akademickiej, a także
+				– w ramach swojej działalności – należycie przygotowywać studentów do bycia
+				w przyszłości innowacyjnymi pracownikami. Co istotne, liderzy kół i organizacji
+				studenckich, promując osiągnięte w niniejszym raporcie wnioski, sami staną się
+				ekspertami w zakresie rynku pracy, co może pomóc im w odniesieniu własnego
+				sukcesu zawodowego.
+			</p>
+			<p>
+				W pierwszej części opracowania prezentujemy Czytelnikom wyniki analizy ogłoszeń
+				rekrutacyjnych w celu ich usystematyzowania oraz znalezienia wspólnych
+				mianowników. W drugiej części konfrontujemy je z wywiadem przeprowadzonym
+				wśród przedsiębiorców, co pozwala na jeszcze bardziej precyzyjne sportretowanie
+				wizerunku idealnego kandydata do pracy. Wreszcie w podsumowaniu przedstawiamy
+				konkluzje i wnioski praktyczne, które mogą być przydatne adeptom nauk w procesie
+				nieustannego rozwoju i formacji.
+			</p>
+		</div>
+		<h2 id="oczekiwania_ogloszenia" class="content-head is-center">Oczekiwania pracodawców wobec pracowników w
+			świetle ogłoszeń rekrutacyjnych</h2>
+		<div class="content">
+			<p>
+				Na potrzeby niniejszego opracowania przeanalizowaliśmy 950 losowo wybranych
+				ogłoszeń o pracę, umieszczonych na jednych z najpopularniejszych portali dla osób
+				poszukujących zatrudnienia – pracuj.pl oraz olx.pl - z podziałem na 19 kluczowych
+				branż (po 50 ogłoszeń z każdej):
+			</p>
+			<!-- Table 1 -->
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Lp.</th>
+						<th>Branża</th>
+						<th>Zawody i stanowiska pracy</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>IT</td>
+						<td>Informatyk, programista, pracownik działu IT</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Finansowa</td>
+						<td>Analityk finansowy, analityk ryzyka dla firm, twórca raportów
+							(w tym prezentacja tych raportów przed zarządami i klientami)</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Audytorsko-doradcza</td>
+						<td>Doradca finansowy, audytor, kierownik działu sprawdzania
+							jakości, osoba sprawdzająca prawidłowość zawieranych
+							transakcji (przede wszystkim stanowiska w tzw. Wielkiej
+							Czwórce, tj. Deloitte, Ernst and Young, KPMG, PwC)</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Prawnicza</td>
+						<td>Radca prawny, adwokat, pracownik kancelarii
+							z wykształceniem prawniczym</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Księgowa</td>
+						<td>Księgowy, asystent głównego księgowego</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Robotyki przemysłowej</td>
+						<td>Kierownik zespołu w branży przemysłowej, pracownik
+							odpowiadający za koordynację działań, inżynier na
+							halach produkcyjnych</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Prywatnego nauczania</td>
+						<td>Nauczyciel, pracownik oświaty</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>Sportowa</td>
+						<td>Trener, instruktor</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>Transportowa</td>
+						<td>Pracownik biura transportowego, menedżer kierowców</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Budowlana</td>
+						<td>Kierownik budowy i jego zastępca</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>Medialna</td>
+						<td>Redaktor, dziennikarz</td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>Reklamowa</td>
+						<td>Marketingowiec, pracownik działu marketingu</td>
+					</tr>
+					<tr>
+						<td>13.</td>
+						<td>Gastronomiczna</td>
+						<td>Menedżer sali, kierownik restauracji, szef kuchni</td>
+					</tr>
+					<tr>
+						<td>14.</td>
+						<td>Turystyczna</td>
+						<td>Pracownik biura podróży, koordynator wyjazdów</td>
+					</tr>
+					<tr>
+						<td>15.</td>
+						<td>Opieki zdrowotnej</td>
+						<td>Praca w domach opieki społecznej, opieka nad osobami
+							starszymi, kierownik DPS</td>
+					</tr>
+					<tr>
+						<td>16.</td>
+						<td>Sprzedaży bezpośredniej</td>
+						<td>Sprzedawca prezentujący produkty bezpośrednio u klienta</td>
+					</tr>
+					<tr>
+						<td>17.</td>
+						<td>Chemiczna i kosmetologiczna</td>
+						<td>Kosmetyczka, kierownik zakładu kosmetycznego, osoba
+							wykonująca zabiegi</td>
+					</tr>
+					<tr>
+						<td>18.</td>
+						<td>Badań i rozwoju</td>
+						<td>Pracownik korporacyjny w dziale badań i rozwoju,
+							analityk, statystyk</td>
+					</tr>
+					<tr>
+						<td>19.</td>
+						<td>Dietetyczna</td>
+						<td>Dietetyk</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				Poniżej prezentujemy wyniki analizy statystycznej ogłoszeń pracodawców
+				i najczęściej powtarzających się w nich pożądanych umiejętności pracowników
+				w poszczególnych branżach wraz z krótkim komentarzem. W przypadku każdej
+				z branż sprawdziliśmy po 50 ogłoszeń, na podstawie których przygotowaliśmy tabele
+				i wykresy obrazujące poziom zapotrzebowania na poszczególne umiejętności.
+			</p>
+			<h3>1. Branża IT</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Bardzo dobra znajomość j. angielskiego w mowie i piśmie</td>
+						<td>33</td>
+						<td>66%</td>
+					</tr>
+					<tr>
+						<td>Komunikatywność i umiejętność pracy w zespole</td>
+						<td>29</td>
+						<td>58%</td>
+					</tr>
+					<tr>
+						<td>Znajomość MS Office</td>
+						<td>25</td>
+						<td>50%</td>
+					</tr>
+					<tr>
+						<td>Zdolność analitycznego myślenia</td>
+						<td>23</td>
+						<td>46%</td>
+					</tr>
+					<tr>
+						<td>Znajomość procesu tworzenia aplikacji</td>
+						<td>21</td>
+						<td>42%</td>
+					</tr>
+					<tr>
+						<td>Znajomość C++ i C#</td>
+						<td>17</td>
+						<td>34%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy pod presją czasu </td>
+						<td>16</td>
+						<td>32%</td>
+					</tr>
+					<tr>
+						<td>Zarządzanie projektami</td>
+						<td>14</td>
+						<td>28%</td>
+					</tr>
+					<tr>
+						<td>Znajomość JAVA</td>
+						<td>11</td>
+						<td>22%</td>
+					</tr>
+					<tr>
+						<td>Min. 3 lata doświadczenia</td>
+						<td>11</td>
+						<td>22%</td>
+					</tr>
+					<tr>
+						<td>Język HTML i CSS</td>
+						<td>10</td>
+						<td>20%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy na dużych bazach danych</td>
+						<td>10</td>
+						<td>20%</td>
+					</tr>
+					<tr>
+						<td>Min. 1 rok doświadczenia</td>
+						<td>10</td>
+						<td>20%</td>
+					</tr>
+				</tbody>
+			</table>
+			<div>
+				<canvas id="chart1"></canvas>
+			</div>
+			<p>Pracodawcy w branży IT stawiają spory nacisk na znajomość języka angielskiego
+				jako kluczowego w codziennej komunikacji w tej części gospodarki. Cenione są także
+				kompetencje miękkie (komunikatywność, praca zespołowa, analityczne myślenie,
+				praca pod presją czasu, zarządzanie projektami). Równolegle istotne są tzw. twarde
+				umiejętności (obsługa pakietu biurowego, znajomość języków programowania
+				i projektowania stron internetowych czy umiejętność pracy na bazach danych). </p>
+			<p>Co ciekawe, żadna z umiejętności nie przekroczyła pułapu 70% powtórzeń, zaś
+				zdecydowana większość z nich plasuje się poniżej 50%. Wskazuje to na zróżnicowany
+				wachlarz pożądanych przez pracodawców umiejętności, choć niewątpliwie jest to
+				także skorelowane z różnorodną specyfiką poszczególnych stanowisk w branży IT.
+				Nie odnotowuje się natomiast zdolności, które byłyby wymagane niemal zawsze
+				i wszędzie, w związku z czym katalog ma, szczególnie w drugiej części zestawienia,
+				relatywnie wyrównany, pod względem sumarycznym, charakter. </p>
+			<p>Warto też dodać, iż większość ogłoszeń o pracę na portalu <a href="pracuj.pl">pracuj.pl</a>, mimo filtru na
+				Polskę, była opisana w języku angielskim. Oferowana praca, głównie przez bardzo
+				duże korporacje, miała odbywać się zdalnie albo w biurowcach w dużych miastach.
+				Niektórzy pracodawcy oczekiwali 5 lat doświadczenia, a niekiedy i więcej. Jeden
+				z oferentów szukał wręcz pracownika z 15-letnim doświadczeniem!</p>
+			<h3>2. Branża finansowa</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Bardzo dobra znajomość j. angielskiego w mowie i piśmie</td>
+						<td>37</td>
+						<td>74%</td>
+					</tr>
+					<tr>
+						<td>Znajomość MS Office</td>
+						<td>34</td>
+						<td>68%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy pod presją czasu</td>
+						<td>30</td>
+						<td>60%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy z klientem</td>
+						<td>25</td>
+						<td>50%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność analitycznego myślenia</td>
+						<td>20</td>
+						<td>40%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy w zespole</td>
+						<td>20</td>
+						<td>40%</td>
+					</tr>
+					<tr>
+						<td>Doświadczenie w branży</td>
+						<td>19</td>
+						<td>38%</td>
+					</tr>
+					<tr>
+						<td>Prawo jazdy kat. B</td>
+						<td>16</td>
+						<td>32%</td>
+					</tr>
+					<tr>
+						<td>Min. 3 lata doświadczenia</td>
+						<td>14</td>
+						<td>28%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność organizacji pracy własnej</td>
+						<td>10</td>
+						<td>20%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność negocjacji</td>
+						<td>8</td>
+						<td>16%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart2"></canvas>
+			<p>W sektorach finansowych, obok standardowej znajomości j. angielskiego i pakietu
+				Office, uwagę zwraca bardzo duży nacisk na kompetencje miękkie (zdolność pracy pod
+				presją czasu, pracy z klientem, analitycznego myślenia, pracy w zespole, organizacji
+				pracy własnej, negocjacji). Wskazuje to na charakter zatrudnienia w tej branży, gdzie
+				istotne jest wykształcenie odpowiednich behawioralnych postaw, nawyków oraz
+				adaptacji do specyfiki pracy. </p>
+			<p>Większość ogłoszeń pochodziła od dużych korporacji oraz banków. Spora część z nich
+				była w języku angielskim. Niektóre z ofert były mocno nieprecyzyjne i poza warunkiem
+				ukończenia studiów wyższych nie wskazywały żadnych innych pożądanych
+				kompetencji twardych. W bardzo wielu przypadkach szukano też asystentów
+				z oferowaną możliwością późniejszej drogi awansu. Stanowi to celowe odroczenie
+				gratyfikacji, które jednocześnie ma na celu zmotywowanie kandydatów do rzetelnego
+				wykonywania obowiązków w nowym miejscu pracy, tak aby docelowo zostali należycie
+				docenieni i w efekcie mogli wspinać się po kolejnych szczeblach kariery.</p>
+			<h3>3. Branża audytorsko-doradcza</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Min. 2 lata doświadczenia</td>
+						<td>38</td>
+						<td>74%</td>
+					</tr>
+					<tr>
+						<td>Bardzo dobra znajomość j. angielskiego w mowie i piśmie</td>
+						<td>33</td>
+						<td>66%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy w zespole</td>
+						<td>32</td>
+						<td>64%</td>
+					</tr>
+					<tr>
+						<td>Znajomość MS Office</td>
+						<td>31</td>
+						<td>62%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność analityczne</td>
+						<td>29</td>
+						<td>58%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność organizacji pracy samodzielnej</td>
+						<td>27</td>
+						<td>54%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy z klientem</td>
+						<td>21</td>
+						<td>42%</td>
+					</tr>
+					<tr>
+						<td>Rozbudowana wiedza o księgowości</td>
+						<td>19</td>
+						<td>38%</td>
+					</tr>
+					<tr>
+						<td>Znajomość drugiego języka obcego</td>
+						<td>10</td>
+						<td>20%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart3"></canvas>
+			<p>Branża audytorsko-doradcza największy nacisk stawia na doświadczenie, tym
+				niemniej – podobnie jak w branży finansowej – bardzo zauważalne jest położenie
+				akcentu na rozwój kompetencji miękkich. Co jednak symptomatyczne, w ogłoszeniach
+				bardzo oszczędnie opisywano wymagane cechy i zdolności.</p>
+			<p>Oferty pracy charakteryzowała również duża asymetria – większość pracodawców
+				najchętniej zatrudniłaby osoby po studiach, ale zdarzały się również oferty dla osób ze
+				średnim wykształceniem. Godnym spostrzeżenia jest też fakt, iż w serwisie pracuj.pl
+				na cały kraj odnotowano zaledwie 168 ofert pracy. Może to wskazywać na stosunkowo
+				niewielką liczbę podmiotów na rynku, które działają w tej branży.</p>
+			<h3>4. Branża prawnicza</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Odpowiedzialność w zakresie powierzonych zadań</td>
+						<td>33</td>
+						<td>66%</td>
+					</tr>
+					<tr>
+						<td>Bardzo dobra znajomość j. angielskiego w mowie i piśmie – poziom C1</td>
+						<td>32</td>
+						<td>64%</td>
+					</tr>
+					<tr>
+						<td>Znajomość MS Office</td>
+						<td>30</td>
+						<td>60%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy pod presją czasu</td>
+						<td>29</td>
+						<td>58%</td>
+					</tr>
+					<tr>
+						<td>Wysokie zdolności komunikacyjne</td>
+						<td>22</td>
+						<td>44%</td>
+					</tr>
+					<tr>
+						<td>Doświadczenie w branży</td>
+						<td>19</td>
+						<td>38%</td>
+					</tr>
+					<tr>
+						<td>Doświadczenie w negocjowaniu umów</td>
+						<td>16</td>
+						<td>32%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność koordynacji wielu działań </td>
+						<td>10</td>
+						<td>20%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart4"></canvas>
+			<p>Od adeptów prawa, jak pokazują statystyki, przede wszystkim wymaga się brania
+				odpowiedzialności za powierzone im zadania. Niewątpliwie wiąże się to również
+				z umiejętnością prowadzenia spraw do końca oraz należytą dozą zaangażowania
+				i sumienności. Za niemal równie istotną uznawana jest świetna znajomość języka
+				angielskiego, z zaznaczeniem, iż chodzi o poziom C1, czyli drugi najwyższy w skali
+				CEFR (Common European Framework). Niewątpliwie jest to umiejętność przydatna,
+				zarówno w trakcie rozmów biznesowych, prowadzenia spraw z udziałem kontrahentów
+				zza granicy, ale również tzw. researcherów, czyli przygotowywania opracowań
+				konkretnych prawniczych zagadnień.</p>
+			<p>Za cenną kompetencję uznano także umiejętność pracy pod presją czasu, co
+				niewątpliwie przydaje się w kontekście pracy w obszarze legislacyjnym ze względu
+				na częstą nagłość podejmowanych decyzji i krótki okres na przygotowanie się do np.
+				posiedzeń komisji parlamentarnych. Analogicznie zdolność ta będzie nieodzowna
+				również prawnikom procesowym, którzy muszą sprostać zakreślonym terminom na
+				sporządzenie apelacji czy skargi kasacyjnej. </p>
+			<p>Warto zwrócić też uwagę na potrzebę posiadania rozwiniętych umiejętności
+				komunikacyjnych, które szczególnie w tym fachu przydają się podczas prezentowania
+				stanowisk czy argumentowania za podnoszonymi tezami. Zdolność ta ma również
+				przełożenie w momentach kontaktu z mediami, gdzie dodatkowo często przydaje
+				się talent do wyważenia prawniczej precyzji, a jednocześnie nadania komunikatowi
+				odpowiednio przyswajalnej wartości dla odbiorcy.</p>
+			<p>Niewątpliwie substancjalne znaczenie ma także zdolność do jednoczesnej
+				koordynacji wielu spraw. Jest to wartość dodana, która przydaje się w dużej mierze na
+				stanowiskach menedżerskich, ale również w stricte prawniczym fachu. Wspomniany
+				tzw. multitasking, czyli zapanowanie i zapamiętanie mnóstwa różnorodnych faktów
+				i czynności do wykonania, staje się poważną kartą przetargową podczas rekrutacji. </p>
+			<p>Wszystko to jednak nie zapewni sukcesu, jeżeli pracownik nie będzie mógł pochwalić
+				się znakomitą wiedzą i przygotowaniem prawniczym. I mimo że ten element
+				w ogłoszeniach nie należy do najczęściej powtarzanych (być może uchodząc za wręcz
+				oczywisty), o tyle bez wątpienia stanowi jedno z clou sukcesu w tej branży - naturalnie
+				obok doświadczenia zawodowego.</p>
+			<h3>5. Branża księgowa</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Znajomość MS Office</td>
+						<td>46</td>
+						<td>92%</td>
+					</tr>
+					<tr>
+						<td>Min. 2 lata doświadczenia</td>
+						<td>37</td>
+						<td>74%</td>
+					</tr>
+					<tr>
+						<td>Bardzo dobra znajomość j. angielskiego w mowie i piśmie – poziom C1</td>
+						<td>32</td>
+						<td>64%</td>
+					</tr>
+					<tr>
+						<td>Samodzielność i dobra organizacja pracy własnej</td>
+						<td>20</td>
+						<td>40%</td>
+					</tr>
+					<tr>
+						<td>Znajomość systemu Exact</td>
+						<td>17</td>
+						<td>34%</td>
+					</tr>
+					<tr>
+						<td>Zaświadczenie o niekaralności</td>
+						<td>15</td>
+						<td>30%</td>
+					</tr>
+					<tr>
+						<td>Odporność na stres</td>
+						<td>15</td>
+						<td>30%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy w zespole</td>
+						<td>15</td>
+						<td>30%</td>
+					</tr>
+					<tr>
+						<td>Znajomość systemu ENOVA</td>
+						<td>12</td>
+						<td>24%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart5"></canvas>
+			<p>W branży księgowej za fundamentalną umiejętność uznano znajomość pakietu MS
+				Office – wiedzy w tym zakresie wymagali prawie wszyscy pracodawcy (92%). Bardzo
+				istotne było również posiadane doświadczenie (minimum 2-letnie) i znajomość
+				języka angielskiego na poziomie C1. Zdecydowanie niżej sklasyfikowano kompetencje
+				miękkie. Pojawiły się również wymagania dotyczące znajomości fachowych systemów
+				księgowych, co wskazuje na potrzebę specjalizacji w branży. </p>
+			<p>Co ciekawe, w niemal 1/3 ogłoszeń proszono o zaświadczenie o niekaralności. Pokazuje
+				to, że kandydaci powinni być osobami nieskazitelnego charakteru o wysokim
+				poziomie zaufania.</p>
+			<h3>6. Branża robotyki przemysłowej</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Umiejętność posługiwania się dokumentacją techniczną i rysunkiem technicznym</td>
+						<td>37</td>
+						<td>74%</td>
+					</tr>
+					<tr>
+						<td>Uprawnienia SEP</td>
+						<td>35</td>
+						<td>70%</td>
+					</tr>
+					<tr>
+						<td>Znajomość języka angielskiego w stopniu komunikatywnym</td>
+						<td>32</td>
+						<td>64%</td>
+					</tr>
+					<tr>
+						<td>Doświadczenie w pracy z maszynami</td>
+						<td>21</td>
+						<td>42%</td>
+					</tr>
+					<tr>
+						<td>Znajomość systemów PLC, SCADA, DCS. RMS, BMS</td>
+						<td>20</td>
+						<td>40%</td>
+					</tr>
+					<tr>
+						<td>Znajomość MS Office</td>
+						<td>20</td>
+						<td>40%</td>
+					</tr>
+					<tr>
+						<td>Znajomość sterowników Siemens</td>
+						<td>15</td>
+						<td>30%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy pod presją czasu</td>
+						<td>14</td>
+						<td>28%</td>
+					</tr>
+					<tr>
+						<td>Podstawowa znajomość schematów hydraulicznych</td>
+						<td>12</td>
+						<td>24%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart6"></canvas>
+			<p>Branża robotyki przemysłowej zdecydowany nacisk stawia na konkretne umiejętności
+				i uprawnienia. Wśród dziewięciu najczęściej powtarzanych warunków rekrutacyjnych
+				pojawiła się wyłącznie jedna pozycja, dotycząca kompetencji miękkiej. Świadczy
+				to o charakterze zadań i wyzwań, jakie stawiane są przed pracownikami w tej gałęzi
+				gospodarki. Relatywnie mało istotne są w tym obszarze umiejętności tworzenia relacji
+				interpersonalnych czy kształtowania współpracy zespołowej. Za znacznie ważniejsze
+				uznawane są fachowość i profesjonalizm.</p>
+			<p>Przedstawiony wachlarz pożądanych umiejętności pozwala zarekomendować
+				adeptom nauk technicznych skupienie się przede wszystkim na podnoszeniu tych
+				najbardziej wymiernych kwalifikacji zawodowych. Nie zmienia to jednak faktu, że
+				łatwość w nawiązywaniu relacji czy samoorganizacji pracy własnej również będą
+				przydatne, mimo iż cenione pragmatycznie w mniejszym stopniu.</p>
+			<h3>7. Branża prywatnego nauczania</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Doświadczenie w prowadzeniu zajęć, wykładów, szkoleń, prezentacji itp.</td>
+						<td>32</td>
+						<td>64%</td>
+					</tr>
+					<tr>
+						<td>Komunikatywność</td>
+						<td>32</td>
+						<td>64%</td>
+					</tr>
+					<tr>
+						<td>Serdeczne podejście do ucznia i rodzica</td>
+						<td>30</td>
+						<td>60%</td>
+					</tr>
+					<tr>
+						<td>Dodatkowe kursy i przygotowanie pedagogiczne</td>
+						<td>25</td>
+						<td>50%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność obsługi komputera</td>
+						<td>22</td>
+						<td>44%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy w zespole</td>
+						<td>18</td>
+						<td>36%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność przekazywania wiedzy</td>
+						<td>12</td>
+						<td>24%</td>
+					</tr>
+					<tr>
+						<td>Rzetelność</td>
+						<td>9</td>
+						<td>18%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart7"></canvas>
+			<p>W szkolnictwie prywatnym najwyżej cenione jest doświadczenie zawodowe, a także
+				komunikatywność. Komunikatywność stanowi o charakterze tego zawodu, jakim
+				jest potrzeba przekazywania wiedzy w możliwie jak najbardziej rzetelny sposób
+				przy jednoczesnej przystępności formy. Z tego samego powodu w ogłoszeniach
+				pojawiały się również wymogi posiadania umiejętności przekazywania wiedzy,
+				a także rzetelności. </p>
+			<p>Bardzo wielu pracodawców wskazywało również na serdeczne podejście do uczniów
+				i rodziców, co niewątpliwie ma kluczowe znaczenie dla budowania wzajemnej relacji.
+				Jednocześnie w połowie ogłoszeń znalazły się wymagania dotyczące dodatkowych
+				kursów. Świadczy to o potrzebie nieustannego pogłębiania swojej wiedzy
+				i podnoszenia kwalifikacji</p>
+			<h3>8. Branża sportowa</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Uprawnienia instruktorskie</td>
+						<td>28</td>
+						<td>56%</td>
+					</tr>
+					<tr>
+						<td>Doświadczenie</td>
+						<td>26</td>
+						<td>52%</td>
+					</tr>
+					<tr>
+						<td>Otwartość</td>
+						<td>17</td>
+						<td>34%</td>
+					</tr>
+					<tr>
+						<td>Ważna książeczka sanepidowska</td>
+						<td>14</td>
+						<td>28%</td>
+					</tr>
+					<tr>
+						<td>Zaświadczenie o niekaralności</td>
+						<td>13</td>
+						<td>26%</td>
+					</tr>
+					<tr>
+						<td>Pracowitość</td>
+						<td>12</td>
+						<td>24%</td>
+					</tr>
+					<tr>
+						<td>Prawo jazdy kat. B</td>
+						<td>10</td>
+						<td>20%</td>
+					</tr>
+					<tr>
+						<td>Znajomość j. angielskiego w celu prowadzenia zajęć z obcokrajowcami</td>
+						<td>9</td>
+						<td>18%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart8"></canvas>
+			<p>Pracodawcy, poszukując trenerów czy instruktorów, największą wagę przywiązują do
+				posiadanych uprawnień oraz doświadczenia. Pozostałe kryteria mają zdecydowanie
+				mniejsze praktyczne znaczenie. </p>
+			<p>Do tych bardziej uchwytnych należy posiadanie książeczki zdrowia do celów
+				sanitarno-epidemiologicznych, potocznie zwanej książeczką sanepidowską,
+				znajomość języka angielskiego, zaświadczenie o niekaralności, a także prawo jazdy
+				kat. B. Ceniona jest także pracowitość i otwartość, choć oczywiście nie są to cechy
+				łatwo mierzalne.</p>
+			<h3>9. Branża transportowa</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Bardzo dobra znajomość j. angielskiego</td>
+						<td>40</td>
+						<td>80%</td>
+					</tr>
+					<tr>
+						<td>Znajomość MS Office</td>
+						<td>38</td>
+						<td>76%</td>
+					</tr>
+					<tr>
+						<td>Wysokie umiejętności komunikacyjne</td>
+						<td>33</td>
+						<td>66%</td>
+					</tr>
+					<tr>
+						<td>Dobra znajomość rynku przewoźników</td>
+						<td>27</td>
+						<td>54%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność budowania i podtrzymywania długotrwałych relacji z klientem</td>
+						<td>22</td>
+						<td>44%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność radzenia sobie ze stresem</td>
+						<td>21</td>
+						<td>42%</td>
+					</tr>
+					<tr>
+						<td>Doświadczenie</td>
+						<td>16</td>
+						<td>32%</td>
+					</tr>
+					<tr>
+						<td>Znajomość drugiego języka obcego</td>
+						<td>14</td>
+						<td>28%</td>
+					</tr>
+					<tr>
+						<td>Dobra organizacja pracy</td>
+						<td>11</td>
+						<td>22%</td>
+					</tr>
+					<tr>
+						<td>Zdolności myślenia analitycznego</td>
+						<td>8</td>
+						<td>16%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart9"></canvas>
+			<p>Do pracy w biurze transportowym – w ocenie pracodawców publikujących ogłoszenia
+				rekrutacyjne – niezbędna jest świetna znajomość języka angielskiego. Niewątpliwie
+				wynika to ze specyfiki pracy, która polega na częstych kontaktach z kontrahentami
+				zagranicznymi. Z tego samego powodu w zestawieniu pojawia się również znajomość
+				drugiego języka obcego. Pozwala to zachęcić studentów do intensywniejszego
+				kształcenia się w umiejętnościach lingwistycznych.</p>
+			<p>Wysoko cenione są także znajomość MS Office czy dobrze rozwinięte umiejętności
+				komunikacyjne. Szczególną uwagę zwrócić należy na potrzebę znajomości realiów
+				rynku oraz zdolność do budowania i dalszego podtrzymywania długotrwałych relacji
+				z klientem. Wydaje się, że są to umiejętności kluczowe z punktu widzenia rozwoju
+				przedsiębiorstw i współpracy z otoczeniem biznesowym. </p>
+			<h3>10. Branża budowlana</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Doświadczenie w zarządzaniu ludźmi oraz realizacji projektów
+							z określonymi terminami</td>
+						<td>45</td>
+						<td>90%</td>
+					</tr>
+					<tr>
+						<td>Znajomość MS Project i MS Excel</td>
+						<td>37</td>
+						<td>74%</td>
+					</tr>
+					<tr>
+						<td>Uprawnienia budowlane</td>
+						<td>36</td>
+						<td>72%</td>
+					</tr>
+					<tr>
+						<td>Znajomość branży budowlanej</td>
+						<td>29</td>
+						<td>58%</td>
+					</tr>
+					</tr>
+					<tr>
+						<td>Umiejętność nawiązania relacji w zespole</td>
+						<td>25</td>
+						<td>50%</td>
+					</tr>
+					</tr>
+					<tr>
+						<td>Znajomość AutoCAD</td>
+						<td>22</td>
+						<td>44%</td>
+					</tr>
+					</tr>
+					<tr>
+						<td>Prawo jazdy kat. B</td>
+						<td>18</td>
+						<td>36%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart10"></canvas>
+			<p>W branży budowlanej 90% ofert podkreślało znaczenie doświadczenia w zakresie
+				zarządzania kapitałem ludzkim, a także realizacji projektów o określonych terminach.
+				To drugie jest w pełni zrozumiałe, mając na względzie, iż w przypadku tej branży
+				często zakreślone są konkretne terminy zakończenia budowy, a ich przekroczenie
+				rodzi niejednokrotnie odpowiedzialność finansową. Przypisanie natomiast tak
+				kolosalnego znaczenia doświadczeniu w zarządzaniu zespołem, naturalnie oprócz
+				wartości samych kompetencji menedżerskich, może potencjalnie świadczyć
+				o dodatkowej specyfice zarządzania personelem w tej właśnie branży, wynikającej
+				z czynnika ludzkiego. </p>
+			<p>Pracodawcy bardzo cenią sobie znajomość profesjonalnego oprogramowania,
+				posiadanie stosownych uprawnień budowlanych, a także znajomość branży. Połowa
+				ogłoszeń wskazała również na istotną rolę umiejętności nawiązywania relacji
+				w zespole, co niewątpliwie skorelowane jest z pierwszą pozycją w zestawieniu.
+			</p>
+			<p>Warto zauważyć, że w tabeli zabrakło oczekiwań co do dyspozycyjności pracowników,
+				rozumianej jako mobilność. Należy pamiętać, że budowy zwykle prowadzone
+				są w różnych miejscach, nie tylko regionu, ale i kraju, a niekiedy nawet poza
+				granicami. Elastyczność w tym zakresie, na którą nie każdy – z przyczyn osobistych
+				i rodzinnych – może sobie pozwolić, powinna w naszej ocenie stanowić jeden
+				z wyróżników rekrutacyjnych, choć element ten naturalnie nie musi występować
+				w każdym przypadku.</p>
+			<h3>11. Branża medialna</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Znakomite umiejętności komunikacji w mowie i piśmie</td>
+						<td>32</td>
+						<td>64%</td>
+					</tr>
+					<tr>
+						<td>Udokumentowany dorobek publicystyczny</td>
+						<td>24</td>
+						<td>48%</td>
+					</tr>
+					<tr>
+						<td>Odpowiedzialność, zaangażowanie</td>
+						<td>16</td>
+						<td>32%</td>
+					</tr>
+					<tr>
+						<td>Min. 2 lata doświadczenia na podobnym stanowisku</td>
+						<td>13</td>
+						<td>26%</td>
+					</tr>
+					<tr>
+						<td>Zdolności organizacyjne i dobra organizacja pracy</td>
+						<td>12</td>
+						<td>24%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy w zespole</td>
+						<td>9</td>
+						<td>18%</td>
+					</tr>
+					<tr>
+						<td>Prawo jazdy kat. B</td>
+						<td>9</td>
+						<td>18%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart11"></canvas>
+			<p>W branży związanej z mediami za najważniejszą wskazywaną w ogłoszeniach cechę
+				idealnego kandydata uznawane są znakomite umiejętności komunikacyjne – zarówno
+				w mowie jak i piśmie. Ceniony jest również dotychczasowy dorobek. Bardzo ważny
+				w tym dziale gospodarki jest zatem warsztat i zdobyte doświadczenie, w związku
+				z czym wskazane jest szkolenie i praktykowanie w zawodzie od jak najmłodszych lat.
+			</p>
+			<p>Co ciekawe, w zestawieniu nie pojawia się wymóg specjalizacji w określonych
+				obszarach tematycznych. Oczywiście inna jest specyfika pracy w redakcjach
+				zajmujących się szerokim spektrum tematycznym, a inna w np. czasopismach
+				branżowych, tym niemniej w naszej ocenie i tak warto pamiętać o powtarzanej
+				niekiedy przez praktyków zasadzie, że dziennikarz powinien wiedzieć coś o wszystkim
+				i wszystko o czymś. </p>
+			<p>Warto też odnotować, iż w niektórych ogłoszeniach nie było praktycznie żadnych
+				wymaganych umiejętności poza umiejętnościami komunikacji. Może to wskazywać na
+				ogromną wagę predyspozycji osobistych – umiejętności warsztatowe zawsze można
+				wszak później wyćwiczyć w praktyce.</p>
+			<h3>12. Branża reklamowa</h3>
 
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Kreatywność</td>
+						<td>42</td>
+						<td>84%</td>
+					</tr>
+					<tr>
+						<td>Min. 2 lata doświadczenia w branży</td>
+						<td>41</td>
+						<td>82%</td>
+					</tr>
+					<tr>
+						<td>Znajomość mediów społecznościowych</td>
+						<td>37</td>
+						<td>74%</td>
+					</tr>
+					<tr>
+						<td>Świetne zdolności interpersonalne</td>
+						<td>36</td>
+						<td>72%</td>
+					</tr>
+					<tr>
+						<td>Zdolności graficzne</td>
+						<td>33</td>
+						<td>66%</td>
+					</tr>
+					<tr>
+						<td>Obszerna wiedza z obszarów performance marketingu i CRM</td>
+						<td>24</td>
+						<td>48%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność dotrzymywania terminów</td>
+						<td>19</td>
+						<td>38%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność przeprowadzenia prezentacji</td>
+						<td>17</td>
+						<td>34%</td>
+					</tr>
+					<tr>
+						<td>Bardzo wysokie zdolności analityczne</td>
+						<td>16</td>
+						<td>32%</td>
+					</tr>
+					<tr>
+						<td>Znajomość MS Office</td>
+						<td>11</td>
+						<td>22%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart12"></canvas>
+			<p>Branża reklamowa stawia nacisk na kreatywność i doświadczenie. Zadaniem
+				fachowców pracujących w tym obszarze jest kształtowanie nowych
+				nieschematycznych rozwiązań w dziedzinie reklamy i marketingu, w związku z czym
+				jest to w pełni uzasadnione. Ogromną rolę w tej branży pełnią media społecznościowe,
+				dlatego też niemal ¾ ogłoszeń zawierało oczekiwania pod tym kątem. Za istotne
+				uznano również zdolności graficzne, które niewątpliwie przydają się przy tworzeniu
+				materiałów reklamowych.</p>
+			<p>W ponad 70% ogłoszeń wskazywano również na znaczenie zdolności
+				interpersonalnych, co niewątpliwie wynika ze specyfiki branży, której zadaniem
+				jest komunikowanie przygotowanych treści w przystępny i niebanalny sposób.
+				Umiejętności te przydają się także w czasie pracy zespołowej.</p>
+			<p>Niemal połowa ogłoszeń operowała również wymogiem wiedzy z zakresu
+				performance marketingu oraz CRM (customer relationship management), czyli
+				zarządzania relacjami z klientem. Adeptom branży zalecamy zatem stałe podnoszenie
+				wiedzy w zakresie teorii i praktyk marketingowych, a także zdolności tworzenia
+				i utrzymywania relacji biznesowych.</p>
+			<p>Pozostałe kompetencje miękkie, takie jak umiejętność dotrzymywania terminów,
+				przeprowadzanie prezentacji czy zdolności analityczne pojawiły się w mniej niż 40%
+				ogłoszeń. Warto zauważyć, że wśród najczęściej poszukiwanych cech kandydatów
+				nie znalazła się dyspozycyjność. To zastanawiające, tym bardziej, że umiejętne
+				zarządzanie social media wymaga pracy również poza schematycznym rozkładem
+				godzinowym. Jednocześnie wiele wydarzeń, m.in. kulturalnych, sportowych, niekiedy
+				także biznesowych, w które mogą być zaangażowani pracownicy branży, odbywa się
+				wieczorami lub w weekendy.</p>
+			<h3>13. Branża gastronomiczna</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Dyspozycyjność i dobra organizacja pracy</td>
+						<td>47</td>
+						<td>94%</td>
+					</tr>
+					<tr>
+						<td>Doświadczenie w branży gastronomicznej</td>
+						<td>42</td>
+						<td>84%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy w zespole</td>
+						<td>38</td>
+						<td>76%</td>
+					</tr>
+					<tr>
+						<td>Odporność na stres</td>
+						<td>31</td>
+						<td>62%</td>
+					</tr>
+					<tr>
+						<td>Biegła znajomość j. angielskiego</td>
+						<td>14</td>
+						<td>28%</td>
+					</tr>
+					<tr>
+						<td>Wysoka kultura osobista</td>
+						<td>11</td>
+						<td>22%</td>
+					</tr>
+					<tr>
+						<td>Wiedza w zakresie organizacji i rozliczania dużych wydarzeń</td>
+						<td>10</td>
+						<td>20%</td>
+					</tr>
+					<tr>
+						<td>Znajomość MS Office</td>
+						<td>9</td>
+						<td>18%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart13"></canvas>
+			<p>W przeciwieństwie do poprzedniej branży, w gastronomii wymóg dyspozycyjności
+				pojawia się na pierwszym miejscu. Wiąże się to z imprezami okolicznościowymi,
+				które zazwyczaj odbywają się w weekendy oraz w godzinach wieczorno-nocnych.
+				Równie ceniona jest dobra organizacja pracy. Za ważne uchodzi także posiadane
+				doświadczenie (ponad 80% ogłoszeń), umiejętność pracy w zespole (76%) oraz
+				odporność na stres (62%).</p>
+			<p>Kolejne wymagania pod względem częstotliwości pojawiania się w ogłoszeniach
+				rekrutacyjnych pozostają już w ogromnej dysproporcji. Biegła znajomość
+				j. angielskiego została odnotowana zaledwie w niespełna 30% ogłoszeń, a wysoka
+				kultura osobista w nieco ponad 20%. Warta spostrzeżenia jest pożądana wiedza
+				w zakresie organizacji i rozliczania dużych wydarzeń, co ma niebagatelne znaczenie
+				z punktu widzenia menedżerów np. domów weselnych.</p>
+			<h3>14. Branża turystyczna</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Znajomość j. angielskiego</td>
+						<td>44</td>
+						<td>88%</td>
+					</tr>
+					<tr>
+						<td>Min. 1 rok doświadczenia w branży</td>
+						<td>41</td>
+						<td>82%</td>
+					</tr>
+					<tr>
+						<td>Zdolności interpersonalne i komunikacyjne</td>
+						<td>39</td>
+						<td>78%</td>
+					</tr>
+					<tr>
+						<td>Znajomość MS Office</td>
+						<td>33</td>
+						<td>66%</td>
+					</tr>
+					<tr>
+						<td>Samodzielność i kreatywność</td>
+						<td>26</td>
+						<td>52%</td>
+					</tr>
+					<tr>
+						<td>Ogłada i kultura osobista</td>
+						<td>24</td>
+						<td>48%</td>
+					</tr>
+					<tr>
+						<td>Zarządzanie zespołem</td>
+						<td>21</td>
+						<td>42%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy pod presją</td>
+						<td>18</td>
+						<td>36%</td>
+					</tr>
+					<tr>
+						<td>Doświadczenie w pracy z sieciami handlowymi</td>
+						<td>13</td>
+						<td>26%</td>
+					</tr>
+					<tr>
+						<td>Znajomość programów Rehot i Profitroom</td>
+						<td>13</td>
+						<td>26%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart14"></canvas>
+			<p>W branży turystycznej przede wszystkim warto postawić szczególny nacisk na
+				znajomość języków, przede wszystkim angielskiego. Umiejętność tę wyłuszczono
+				w prawie 90% ogłoszeń. Ważne jest również co najmniej roczne doświadczenie
+				oraz zdolności interpersonalno-komunikacyjne. Nieco niżej sklasyfikowano ogładę
+				i kulturę osobistą, zarządzanie zespołem czy zdolność pracy pod presją. Tylko w 26%
+				ogłoszeń pojawił się wymóg znajomości specjalistycznych programów hotelowych:
+				Rehot i Profitroom.</p>
+			<p>Statystyki jednoznacznie wskazują, że – obok standardowej już znajomości
+				j. angielskiego, pakietu Office oraz doświadczenia – kluczowe w branży turystycznej są
+				zdecydowanie kompetencje miękkie.</p>
+			<h3>15. Branża opieki zdrowotnej</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Cierpliwość</td>
+						<td>37</td>
+						<td>74%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy z osobami niepełnosprawnymi</td>
+						<td>22</td>
+						<td>44%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność zarządzania czasem</td>
+						<td>17</td>
+						<td>34%</td>
+					</tr>
+					<tr>
+						<td>Życzliwość</td>
+						<td>16</td>
+						<td>32%</td>
+					</tr>
+					<tr>
+						<td>Kreatywność i umiejętność prowadzenia zajęć tematycznych</td>
+						<td>12</td>
+						<td>24%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy w zespole</td>
+						<td>9</td>
+						<td>18%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart15"></canvas>
+			<p>Najważniejszą cechą wskazywaną przez rekruterów w branży opieki zdrowotnej jest
+				cierpliwość. Pojawiła się ona niemal w ¾ ogłoszeń. Stanowi ona jeden z fundamentów
+				opiekuńczego i troskliwego podejścia do skutecznej pomocy chorym. Pozostałe
+				umiejętności dotyczą pracy z niepełnosprawnymi, zarządzania czasem czy
+				życzliwości. Ciekawą zdolnością jest prowadzenie zajęć tematycznych i kreatywność,
+				co może mieć szczególne znaczenie przy pracy z najmłodszymi. </p>
+			<p>Co ciekawe, większość analizowanych ogłoszeń była bardzo nieprecyzyjna i nie
+				wymagała niczego konkretnego. Na podstawie ich rekonesansu wydawałoby
+				się wręcz, że każdy może wykonywać ten zawód. Z kolei ani razu nie pojawiło
+				się ogłoszenie na wyższe stanowisko kierownicze, co wskazuje z jednej strony
+				na ogromną podaż stanowisk o niskich kwalifikacjach zawodowych, a z drugiej
+				o preferowanym sposobie poszukiwania kandydatów na wyższych stanowiskach poza
+				serwisami internetowymi.</p>
+			<h3>16. Branża sprzedaży bezpośredniej</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Doświadczenie w branży</td>
+						<td>38</td>
+						<td>76%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pozyskania nowego klienta i utrzymania z nim relacji</td>
+						<td>37</td>
+						<td>74%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy pod presją czasu i zadań</td>
+						<td>31</td>
+						<td>62%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność negocjacji</td>
+						<td>27</td>
+						<td>54%</td>
+					</tr>
+					<tr>
+						<td>Udokumentowane wyniki swojej pracy</td>
+						<td>26</td>
+						<td>52%</td>
+					</tr>
+					<tr>
+						<td>Prawo jazdy kat. B</td>
+						<td>25</td>
+						<td>50%</td>
+					</tr>
+					<tr>
+						<td>Kreatywność</td>
+						<td>19</td>
+						<td>38%</td>
+					</tr>
+					<tr>
+						<td>Znajomość MS Office</td>
+						<td>14</td>
+						<td>28%</td>
+					</tr>
+					<tr>
+						<td>Znajomość j. angielskiego</td>
+						<td>9</td>
+						<td>18%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart16"></canvas>
+			<p>W sprzedaży bezpośredniej najwyżej punktowane jest doświadczenie oraz
+				pozyskiwanie i utrzymywanie relacji z klientem. Cechy te stanowią o sukcesie w tej
+				gałęzi gospodarki. Za ważne uznano także zdolność do pracy pod presją czasu i zadań
+				czy umiejętności negocjacyjne. </p>
+			<p>Co ciekawe, znajomość j. angielskiego w tej branży znajduje się na ostatnim miejscu
+				(pojawiła się zaledwie w niespełna co piątym ogłoszeniu). Może to wskazywać na,
+				w znaczącym stopniu, krajowy charakter działalności większości przedsiębiorców.</p>
+			<h3>17. Branża chemiczna i kosmetologiczna</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Umiejętność wykonywania zabiegów kosmetycznych</td>
+						<td>48</td>
+						<td>96%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność nawiązywania relacji z klientem</td>
+						<td>42</td>
+						<td>84%</td>
+					</tr>
+					<tr>
+						<td>Bardzo dobra znajomość produktów kosmetycznych
+							i rynku kosmetycznego</td>
+						<td>33</td>
+						<td>66%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy w zespole</td>
+						<td>21</td>
+						<td>42%</td>
+					</tr>
+					<tr>
+						<td>Min. 2 lata doświadczenia</td>
+						<td>19</td>
+						<td>38%</td>
+					</tr>
+					<tr>
+						<td>Dodatkowe certyfikaty oraz szkolenia</td>
+						<td>18</td>
+						<td>36%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart17"></canvas>
+			<p>Umiejętność wykonywania zabiegów kosmetycznych, czyli praktyczna zdolność
+				wykonywania zawodu, została uznana za absolutnie kluczową i praktycznie niezbędną.
+				Została ona wskazana w 96% przypadków, co stanowi najwyższy odsetek spośród
+				wszystkich analizowanych branż. </p>
+			<p>Za ważną uznawano również umiejętność nawiązywania relacji z klientem (84%) oraz
+				znajomość produktów kosmetycznych i rynku kosmetycznego (66%). Doświadczenie
+				i dodatkowe certyfikaty czy szkolenia zostały uwzględnione jako relatywnie mniej
+				istotne. Może to pośrednio wskazywać na zwiększony popyt na pracowników
+				w tej branży, w związku z czym odpowiednia certyfikacja staje się drugorzędna –
+				najistotniejsze to faktyczne podstawowe umiejętności.</p>
+			<h3>18. Branża badań i rozwoju</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Umiejętność pracy zespołowej</td>
+						<td>38</td>
+						<td>76%</td>
+					</tr>
+					<tr>
+						<td>Znajomość SAS, Python</td>
+						<td>37</td>
+						<td>74%</td>
+					</tr>
+					<tr>
+						<td>Zaangażowanie, staranność, dyspozycyjność</td>
+						<td>32</td>
+						<td>64%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność analitycznego myślenia</td>
+						<td>27</td>
+						<td>54%</td>
+					</tr>
+					<tr>
+						<td>Znajomość MS Office</td>
+						<td>24</td>
+						<td>48%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność organizacji pracy własnej</td>
+						<td>23</td>
+						<td>46%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy pod presją czasu</td>
+						<td>23</td>
+						<td>46%</td>
+					</tr>
+					<tr>
+						<td>Znajomość metod statystycznych</td>
+						<td>20</td>
+						<td>40%</td>
+					</tr>
+					<tr>
+						<td>Znajomość SQL</td>
+						<td>19</td>
+						<td>38%</td>
+					</tr>
+					<tr>
+						<td>Bardzo dobra znajomość j. angielskiego</td>
+						<td>19</td>
+						<td>38%</td>
+					</tr>
+					<tr>
+						<td>Min. 2 lata doświadczenia</td>
+						<td>17</td>
+						<td>34%</td>
+					</tr>
+					<tr>
+						<td>Doświadczenie w pracy z dużymi bazami danych</td>
+						<td>14</td>
+						<td>28%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart18"></canvas>
+			<p>Branża badań i rozwoju najczęściej wskazuje w ogłoszeniach na umiejętność
+				pracy zespołowej oraz znajomość języków programowania. Obok kompetencji
+				miękkich dosyć często pojawiają się też: znajomość metod statystycznych, SQL czy
+				doświadczenie w pracy z dużymi bazami danych. </p>
+			<p>W tej branży stosunkowo popularne są zatem wymagania odnoszące się do
+				konkretnych, twardych umiejętności, wymagających specjalistycznej wiedzy. Widać
+				tutaj wyraźne podobieństwa do branży robotyki przemysłowej czy branży IT.</p>
+			<h3>19. Branża dietetyczna</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Znajomość MS Office</td>
+						<td>32</td>
+						<td>64%</td>
+					</tr>
+					<tr>
+						<td>Wysokie umiejętności interpersonalne</td>
+						<td>27</td>
+						<td>54%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność organizacji pracy dla wielu klientów jednocześnie</td>
+						<td>24</td>
+						<td>48%</td>
+					</tr>
+					<tr>
+						<td>Min. 1 rok doświadczenia</td>
+						<td>23</td>
+						<td>46%</td>
+					</tr>
+					<tr>
+						<td>Prawo jazdy kat. B</td>
+						<td>19</td>
+						<td>38%</td>
+					</tr>
+					<tr>
+						<td>Znajomość programu Jadłospis2</td>
+						<td>13</td>
+						<td>26%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart19"></canvas>
+			<p>W zawodzie dietetyka, co zaskakujące, najbardziej poszukiwane są umiejętności
+				dotyczące pakietu MS Office. Na drugim miejscu uplasowały się zdolności
+				interpersonalne, a na trzecim organizacja pracy własnej w sposób uwzględniający
+				jednoczesną współpracę z wieloma klientami równolegle. </p>
+			<p>Znajomość specjalistycznego programu Jadłospis2 okazała się ważna zaledwie
+				w przypadku nieco ponad ¼ ogłoszeń, w związku z czym zdaje się nie odgrywać
+				w tym fachu kluczowej roli. Ewentualnie pracodawcy wychodzą z założenia, że jego
+				nauczenie się to tylko kwestia czasu i dobrych chęci.</p>
+			<h3>Łącznie (950 ogłoszeń):</h3>
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Umiejętność</th>
+						<th>Liczba powtórzeń</th>
+						<th>Odsetek powtórzeń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Posiadane doświadczenia pracy w branży</td>
+						<td>445</td>
+						<td>47%</td>
+					</tr>
+					<tr>
+						<td>Znajomość MS Office</td>
+						<td>347</td>
+						<td>36,5%</td>
+					</tr>
+					<tr>
+						<td>Dobra znajomość j. angielskiego</td>
+						<td>334</td>
+						<td>35%</td>
+					</tr>
+					<tr>
+						<td>Umiejętność pracy pod presją czasu</td>
+						<td>176</td>
+						<td>18,5%</td>
+					</tr>
+					<tr>
+						<td>Zdolność analitycznego myślenia</td>
+						<td>161</td>
+						<td>17%</td>
+					</tr>
+					<tr>
+						<td>Prawo jazdy kat. B</td>
+						<td>97</td>
+						<td>10%</td>
+					</tr>
+				</tbody>
+			</table>
+			<canvas id="chart20"></canvas>
+			<p>Z sumarycznego łącznego zestawienia 950 ogłoszeń wynika, iż, mówiąc
+				w uproszczeniu, prawie co drugi pracodawca najbardziej ceni sobie posiadane
+				doświadczenie zawodowe. Wskazuje to na ogromną wartość, jaką są praktyki i staże
+				zawodowe – od jak najmłodszych lat. </p>
+			<p>Niemal podobną częstotliwość pojawiania się miały wymagania dotyczące znajomości
+				pakietu MS Office oraz dobrej znajomości j. angielskiego. Należy je uznać za
+				powszechny standard – właściwie prawie niezależnie od branży. W młodym pokoleniu
+				umiejętności te na szczęście rozwinięte są przynajmniej na podstawowym poziomie.
+				Jednak w przypadku osób, które mają w tym zakresie jeszcze spore pole do dalszego
+				rozwoju, niewątpliwie warto ten trud podjąć. </p>
+			<p>Wielokrotnie pojawiała się również umiejętność pracy pod presją czasu, co ma
+				szczególne znaczenie w przypadku stanowisk, dla których istnieje ściśle określony
+				czas reagowania lub przygotowania produktu finalnego. Mimo iż mało kto lubi się
+				spieszyć czy stresować, to jednak warto pamiętać, iż niekiedy wyjście choć odrobinę
+				z własnej strefy komfortu może zadecydować o dostaniu znacznie lepszej pracy</p>
+			<p>W co dziesiątym ogłoszeniu pojawia się także prawo jazdy kat. B. W obecnych czasach
+				jest to również praktycznie standard, tym niemniej nie zawsze jest on wymagany
+				na stanowisku pracy, stąd jego dalsza pozycja. Warto też dodać, iż w niektórych
+				przypadkach – np. w przypadku kierowców w administracji publicznej – oprócz prawa
+				jazdy konieczne będą ważne badania psychotechniczne</p>
+		</div>
+		<h2 id="oczekiwania_ankiety" class="content-head is-center">Oczekiwania pracodawców wobec pracowników w świetle
+			badań ankietowych</h2>
+		<div class="content">
+			<p>W celu porównania oczekiwań pracodawców, które wyłaniają się z ogłoszeń
+				pracodawców, rozesłaliśmy do kilkuset przedsiębiorców z poszczególnych branż
+				dedykowane ankiety. Zapytaliśmy ich, jakich umiejętności oczekują od pracowników,
+				a także w jakim zakresie.</p>
+			<ul class="boxes">
+				<li class="box">Kompetencje miękkie</li>
+				<li class="box">Języki obce</li>
+				<li class="box">Zdobyte doświadzenie</li>
+				<li class="box">Dodatkowe umiejętności</li>
+			</ul>
+			<h3>1. Kompetencje miękkie</h3>
+			<p>Wielokrotnie wskazywano na umiejętność pracy pod presją czasu oraz w grupie,
+				a także odporność na stres. Podkreślano także znaczenie komunikatywności,
+				elastyczności oraz posiadania prawa jazdy kat. B.</p>
+			<h3>2. Języki obce</h3>
+			<p>Przedsiębiorcy stawiają nacisk przede wszystkim na j. angielski. Zależnie od branży
+				jest to poziom zaawansowany (C1) albo wyłącznie komunikatywny (A2/B1). Drugi język
+				nie został uznany za obligatoryjny w żadnej z branż. Niewątpliwie stanowi on jednak
+				wartość dodaną, a preferencje w jego zakresie są już uzależnione od konkretnych
+				stanowisk oraz specyfiki przedsiębiorstw. </p>
+			<h3>3. Zdobyte doświadczenie</h3>
+			<p>Za dosyć istotną uznawano przy rekrutacji działalność potencjalnego pracownika
+				w organizacjach studenckich. Ważne było również zdobyte doświadczenie praktyczne,
+				przebyte szkolenia, a nawet wiedza zdobyta w sposób samodzielny (bez formalnego
+				wykształcenia w danym kierunku). W wielu przypadkach pracodawcy byliby skłonni
+				zatrudnić osobę po technikum – wszystko oczywiście jednak jest uzależnione od
+				sektora oraz konkretnych stanowisk.</p>
+			<h3>4. Dodatkowe umiejętności</h3>
+			<p>Zależnie od branży wskazywano na konieczność posiadania dedykowanych
+				umiejętności. W IT była to znajomość JavaScript, Python czy JAVA, w księgowości
+				wykształcenie MBA i rozeznanie w systemach podatkowych, a w branży prawnej
+				np. ukończenie prawniczego kursu języka obcego czy uprawnienia mediatora.
+				W odniesieniu do magistrów i licencjatów/inżynierów większe szanse na zatrudnienie
+				mają magistrowie.</p>
+			<p>Co istotne, w wielu przypadkach pracodawcy chętnie przyjęliby do pracy osobę, która
+				ma stopień naukowy doktora w dziedzinie z branży. Wskazuje to, że przedsiębiorcy nie
+				obawiają się osób z niejednokrotnie większą wiedzą teoretyczną od siebie. Nie traktują
+				ich jako potencjalnego zagrożenia, ale wręcz przeciwnie - jako szansę dla firmy na
+				dalszy rozwój. </p>
+		</div>
+		<h2 id="konkluzje" class="content-head is-center">Konkluzje</h2>
+		<div class="content">
+			<p>Porównanie ogłoszeń o pracę z wynikami badań ankietowych pokazało, że korelują
+				one ze sobą w sposób harmonijny, a wskazywane w obu miejscach pożądane cechy
+				pracowników są generalnie tożsame. Najistotniejsze kompetencje zatrudnianych
+				osób oscylują tym samym wokół czterech głównych grup: kompetencji miękkich,
+				języków obcych, zdobytego doświadczenia oraz wykształcenia formalnego
+				i dodatkowych umiejętności. </p>
+			<p>Niewątpliwie specyfika każdego pracodawcy jest nieco odmienna. Inaczej będą
+				się także kształtować oczekiwania w odniesieniu do stanowisk menedżerskich
+				i eksperckich, a inaczej w stosunku do stanowisk liniowych. Każda z wymienionych
+				branż ma również swoje własne wyprofilowane oczekiwania wobec przyjmowanych
+				pracowników oraz swoją unikalną charakterystykę. Nie zmienia to jednak faktu, że
+				mają one w wielu miejscach wspólny mianownik. Należy do niego np. częsty wymóg
+				posiadania doświadczenia pracy w branży czy znajomości pakietu Office.</p>
+			<p>Mając na uwadze, że nasza publikacja adresowana jest przede wszystkim do
+				studentów, pragniemy uczulić Was na ogromną wartość, jaką niesie ze sobą
+				podnoszenie kwalifikacji zawodowych we wszystkich spośród wymienionych
+				obszarów. Oczywiście do najbardziej oczywistych należy wykształcenie formalne
+				i dodatkowe kursy, szkolenia, studia podyplomowe, aplikacje itd. Niewątpliwie duży
+				nacisk przywiązany jest także do znajomości języków obcych. W wielu przypadkach
+				doświadczenie zawodowe zdobywane jest jak najwcześniej. Warto tutaj zachęcić, aby,
+				w miarę możliwości, ukierunkowywać się jak najwcześniej i zamiast przysłowiowego
+				sprzedawania popcornu w kinie starać się o pracę i praktyki w swoich branżach.
+				Niewątpliwie czasem jest to utrudnione ze względu na brak wymaganych kompetencji
+				w trakcie procesu nauki (np. w zawodach medycznych), wielokrotnie też studenci nie
+				są jeszcze zdecydowani na określoną ścieżkę rozwoju albo chcą poeksperymentować.
+				Warto jednak orbitować w okolicach określonych branż. To na pewno się opłaci.
+			</p>
+			<p>Na koniec chcielibyśmy zwrócić także uwagę na ogromne znaczenie rozwoju, często
+				pomijanych, kompetencji miękkich, w tym kompetencji społecznych. Wiele konfliktów,
+				na jakie napotykamy później w pracy, ma swoje podłoże niekiedy właśnie w braku
+				należytych umiejętności współpracy z innymi, ale także umiejętnego radzenia sobie
+				z odmiennością, w tym różnymi stylami pracy. Warto także przepracowywać własne
+				schematy poznawcze, ucząc się skutecznej komunikacji, ugodowego podejścia,
+				wyrozumiałości, tolerancji i zaufania. Cenne jest również eliminowanie zbędnych
+				nawyków, takich jak prokrastynacja, nieterminowość czy brak solidności. </p>
+			<p>Wierzymy głęboko, że skumulowanie tych wszystkich pozytywnych prorozwojowych
+				działań pozwoli od razu po studiach, a może nawet i wcześniej, znaleźć pracę marzeń.
+				Czego Wam serdecznie życzymy.</p>
+		</div>
+	</div>
+
+	<script>
+		function generateChart(id, labels, data) {
+			var ctx = document.getElementById(id).getContext('2d');
+			var chart = new Chart(ctx, {
+				type: 'horizontalBar',
+				data: {
+					labels: labels,
+					datasets: [{
+						label: 'Ilość',
+						backgroundColor: 'rgb(31, 141, 214)',
+						borderColor: 'rgb(31, 141, 214)',
+						data: data,
+						borderWidth: 3
+					}]
+				},
+
+				// Configuration options go here
+				options: {
+					scales: {
+						xAxes: [{
+							ticks: {
+								beginAtZero: true
+							}
+						}],
+						yAxes: [{
+							barPercentage: 1
+						}]
+					},
+					legend: {
+						display: false
+					}
+				}
+			});
+		}
+		generateChart('chart1', [
+			'Bardzo dobra znajomość angielskiego w mowie i piśmie',
+			'Komunikatywność i umiejętność pracy w zespole',
+			'Znajomość MS Office',
+			'Zdolność analitycznego myślenia',
+			'Znajomość procesu tworzenia aplikacji',
+			'Znajomość C++ i C#',
+			'Umiejętność pracy pod presją czasu',
+			'Zarządzanie projektami',
+			'Znajomość JAVA',
+			'Min. 3 lata doświadczenia',
+			'Język HTML i CSS',
+			'Umiejętność pracy na dużych bazach danych',
+			'Min. 1 rok doświadczenia'
+		], [33, 29, 25, 23, 21, 17, 16, 14, 11, 11, 10, 10, 10]
+		);
+		generateChart('chart2', [
+			'bardzo dobra znajomość angielskiego w mowie i piśmie',
+			'MS Office',
+			'umiejętność pracy pod presją czasu',
+			'umiejętność pracy z klientem',
+			'umiejętność analitycznego myślenia',
+			'umiejętność pracy w zespole',
+			'jakiekolwiek doświadczenie w branży',
+			'prawo jazdy kategorii B',
+			'min. 3 lata doświadczenia',
+			'umiejętność organizacji pracy własnej',
+			'umiejętność negocjacji'
+		], [37, 34, 30, 25, 20, 20, 19, 16, 14, 10, 8]
+		);
+		generateChart('chart3', [
+			'min. 2 lata doświadczenia',
+			'bardzo dobra znajomość języka angielskiego',
+			'umiejętność pracy w zespole',
+			'MS Office',
+			'umiejętności analityczne',
+			'umiejętność organizacji pracy samodzielnej',
+			'umiejętność pracy z klientem',
+			'rozbudowana wiedza o księgowości',
+			'znajomość drugiego języka obcego'
+		], [38, 33, 32, 31, 29, 27, 21, 19, 10]
+		);
+		generateChart('chart4', [
+			'odpowiedzialność w zakresie powierzonych zadań',
+			'znajomość języka angielskiego - poziom C1',
+			'znajomość MS Office',
+			'umiejętność pracy pod presją czasu',
+			'wysokie zdolności komunikacyjne',
+			'jakiekolwiek doświadczenie w branży',
+			'doświadczenie w negocjowaniu umów',
+			'umiejętność koordynacji wielu działań'
+		], [33, 32, 30, 29, 22, 19, 16, 10]
+		);
+		generateChart('chart5', [
+			'MS Office',
+			'min. 2 lata doświadczenia',
+			'bardzo dobra znajomość języka angielskiego (C1)',
+			'samodzielność i dobra organizacja pracy własnej',
+			'znajomość systemu Exact',
+			'zaświadczenie o niekaralności',
+			'odporność na stres',
+			'umiejętność pracy w zespole',
+			'znajomość systemu ENOVA'
+		], [46, 37, 32, 20, 17, 15, 15, 15, 12]
+		);
+		generateChart('chart6', [
+			'umiejętność posługiwania się dokumentacją techniczną i rysunkiem technicznym',
+			'uprawnienia SEP',
+			'znajomość języka angielskiego w stopniu komunikatywnym',
+			'jakiekolwiek doświadczenie w pracy z maszynami',
+			'znajomość systemów PLC, SCADA, DCS, RMS, BMS',
+			'znajomość MS Office',
+			'znajomość sterowników Siemens',
+			'umiejętność pracy pod presją czasu',
+			'podstawowa znajomość schematów hydraulicznych'
+		], [37, 35, 32, 21, 20, 20, 15, 14, 12]
+		);
+		generateChart('chart7', [
+			'doświadczenie w prowadzeniu zajęć, wykładów, szkoleń, prezentacji itp.',
+			'komunikatywność',
+			'serdeczne podejście do ucznia i rodzica',
+			'dodatkowe kursy i przygotowanie pedagogiczne',
+			'umiejętność obsługi komputera',
+			'umiejętność pracy w zespole',
+			'umiejętność przekazywania wiedzy',
+			'rzetelność'
+		], [32, 32, 30, 25, 22, 18, 12, 9]
+		);
+		generateChart('chart8', [
+			'uprawnienia instruktorskie',
+			'jakiekolwiek doświadczenie',
+			'otwartość',
+			'ważna książeczka sanepidowska',
+			'zaświadczenie o niekaralności',
+			'pracowitość',
+			'prawo jazdy kat. B',
+			'język angielski w celu prowadzenia zajęć z obcokrajowcami'
+		], [28, 26, 17, 14, 13, 12, 10, 9]
+		);
+		generateChart('chart9', [
+			'bardzo dobra znajomość języka angielskiego',
+			'MS Office',
+			'wysokie umiejętności komunikacyjne',
+			'dobra znajomość rynku przewoźników',
+			'umiejętność budowania i podtrzymywania długotrwałych relacji z klientem',
+			'umiejętność radzenia sobie ze stresem',
+			'jakiekolwiek doświadczenie',
+			'znajomość drugiego języka obcego',
+			'dobra organizacja pracy',
+			'zdolności myślenia analitycznego'
+		], [40, 38, 33, 27, 22, 21, 16, 14, 11, 8]
+		);
+		generateChart('chart10', [
+			'doświadczenie w zarządzaniu ludźmi oraz realizacji projektów z określonymi terminami',
+			'znajomość MS Project i MS Excel',
+			'uprawnienia budowlane',
+			'znajomość branży budowlanej',
+			'umiejętność nawiązania relacji w zespole',
+			'znajomość AutoCAD',
+			'prawo jazdy kat. B'
+		], [45, 37, 36, 29, 25, 22, 18]
+		);
+		generateChart('chart11', [
+			'znakomite umiejętności komunikacji w mowie i piśmie',
+			'udokumentowany dorobek publicistyczny',
+			'odpowiedzialność, zaangażowanie',
+			'minimum 2 lata doświadczenia',
+			'zdolności organizacyjne i dobra organizacja pracy',
+			'umiejętność pracy w zespole',
+			'prawo jazdy kat. B'
+		], [32, 24, 16, 13, 12, 9, 9]
+		);
+		generateChart('chart12', [
+			'kreatywność',
+			'min. 2 lata doświadczenia w branży',
+			'znajomość mediów społecznościowych',
+			'świetne zdolności interpersonalne',
+			'zdolności graficzne',
+			'obszerna wiedza z obszarów performance marketingu i CRM',
+			'umiejętność dotrzymywania terminów',
+			'umiejętność przeprowadzenia prezentacji',
+			'bardzo wysokie zdolności analityczne',
+			'znajomość MS Office'
+		], [42, 41, 37, 36, 33, 24, 19, 17, 16, 11]
+		);
+		generateChart('chart13', [
+			'dyspozycyjność i dobra organizacja pracy',
+			'doświadczenie w branży gastronomicznej',
+			'umiejętność pracy w zespole',
+			'odporność na stres',
+			'biegła znajomość języka angielskiego',
+			'wysoka kultura osobista',
+			'wiedza w zakresie organizacji i rozliczania dużych wydarzeń',
+			'znajomość MS Office'
+		], [47, 42, 38, 31, 14, 11, 10, 9]
+		);
+		generateChart('chart14', [
+			'znajomość języka angielskiego',
+			'min. roczne doświadczenie w branży',
+			'zdolności interpersonalne i komunikacyjne',
+			'znajomość MS Office',
+			'samodzielność i kreatywność',
+			'ogłada i kultura osobista',
+			'zarządzanie zespołem',
+			'umiejętność pracy pod presją',
+			'doświadczenie w pracy z sieciami handlowymi'
+		], [44, 41, 39, 33, 26, 24, 21, 18, 13, 13]
+		);
+		generateChart('chart15', [
+			'cierpliwość',
+			'umiejętność pracy z osobami niepełnosprawnymi',
+			'umiejętność zarządzania czasem',
+			'życzliwość',
+			'kreatywność i umiejętność prowadzenia zajęć tematycznych',
+			'umiejętność pracy w zespole'
+		], [37, 22, 17, 16, 12, 9]
+		);
+		generateChart('chart16', [
+			'doświadczenie w branży',
+			'umiejętność pozyskania nowego klienta i utrzymania z nim relacji',
+			'umiejętność pracy pod presją czasu i zadań',
+			'umiejętność negocjacji',
+			'udokumentowane wyniki swojej pracy',
+			'prawo jazdy kat. B',
+			'kreatywność',
+			'znajomość MS Office',
+			'znajomość języka angielskiego'
+		], [38, 37, 31, 27, 26, 25, 19, 14, 9]
+		);
+		generateChart('chart17', [
+			'umiejętność wykonywania zabiegów kosmetycznych',
+			'umiejętność nawiązywania relacji z klientem',
+			'bardzo dobra znajomość produktów kosmetycznych i rynku kosmetycznego',
+			'umiejętność pracy w zespole',
+			'min. 2 lata doświadczenia',
+			'dodatkowe certyfikaty oraz szkolenia'
+		], [48, 42, 33, 21, 19, 18]
+		);
+		generateChart('chart18', [
+			'umiejętność pracy zespołowej',
+			'znajomość SAS, Python',
+			'zaangażowanie, staranność, dyspozycyjność',
+			'umiejętność analitycznego myślenia',
+			'znajomość MS Office',
+			'umiejętność organizacji pracy własnej',
+			'umiejętność pracy pod presją czasu',
+			'znajomość metod statystycznych',
+			'znajomość SQL',
+			'bardzo dobra znajomość języka angielskiego',
+			'min. 2 lata doświadczenia',
+			'doświadczenie w pracy z dużymi bazami danych'
+		], [38, 37, 32, 27, 24, 23, 23, 20, 19, 19, 17, 14]
+		);
+		generateChart('chart19', [
+			'znajomość MS Office',
+			'wysokie umiejętności interpersonalne',
+			'umiejętność organizacji pracy dla wielu klientów jednocześnie',
+			'min. roczne doświadczenie',
+			'prawo jazdy kat. B',
+			'znajomość programu Jadłospis2'
+		], [32, 27, 24, 23, 19, 13]
+		);
+		generateChart('chart20', [
+			'posiadane doświadczenia pracy w branży',
+			'znajomość MS Office',
+			'dobra znajomość języka angielskiego',
+			'umiejętność pracy pod presją czasu',
+			'zdolność analitycznego myślenia',
+			'czynne prawo jazdy kat. B'
+		], [445, 347, 334, 176, 161, 97]
+		);
+	</script>
 </body>
+
 </html>
