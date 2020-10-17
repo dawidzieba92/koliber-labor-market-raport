@@ -110,10 +110,8 @@ a.pure-button-primary {
 	padding: 0.5em;
 	text-align: center;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
-}
-
-.home-menu {
 	background: #2d3e50;
+	height: 45px;
 }
 
 .pure-menu.pure-menu-fixed {
@@ -138,6 +136,7 @@ a.pure-button-primary {
 	color: white;
 	font-weight: 400;
 	font-size: 120%;
+	float: left
 }
 
 .home-menu .pure-menu-list {
@@ -167,7 +166,8 @@ a.pure-button-primary {
  */
 
 .splash-container {
-	background: #1f8dd6;
+	background: url('/images/grupa_ludzi.jpg');
+	background-size: cover;
 	z-index: 1;
 	overflow: hidden;
 	/* The following styles are required for the "scroll-over" effect */
@@ -180,8 +180,9 @@ a.pure-button-primary {
 
 .splash {
 	/* absolute center .splash within .splash-container */
+	background-color: rgba(0,0,0, 0.7);
 	width: 80%;
-	height: 50%;
+	height: 55%;
 	margin: auto;
 	position: absolute;
 	top: 0;
@@ -193,6 +194,7 @@ a.pure-button-primary {
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
+	padding: 0 10px;
 	font-weight: bold;
 	color: white;
 	font-weight: 100;
@@ -201,6 +203,7 @@ a.pure-button-primary {
 
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
+	padding: 0 10px;
 	color: white;
 	letter-spacing: 0.05em;
 	opacity: 0.8;
@@ -313,6 +316,7 @@ a.pure-button-primary {
     menu items to the right. */
 	.home-menu {
 		text-align: left;
+		height: 60px;
 	}
 
 	.home-menu ul {
