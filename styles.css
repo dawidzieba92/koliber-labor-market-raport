@@ -62,6 +62,9 @@ a:hover {
 	text-align: right;
 }
 
+.anchor {
+	height: 30px;
+}
 
 /*
  * -- PURE FORM STYLES --
@@ -106,7 +109,7 @@ a.pure-button-primary {
  */
 
 .home-menu {
-	position: relative;
+	position: fixed;
 	padding: 0.5em;
 	text-align: center;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
@@ -130,6 +133,7 @@ a.pure-button-primary {
 	left: auto;
 	right: 0;
 	max-width: 350px;
+	border: 1px solid #e2e2e2;
 }
 
 .home-menu .pure-menu-heading {
@@ -226,7 +230,7 @@ a.pure-button-primary {
 
 /* We want to give the content area some more padding */
 .content {
-	padding: 1em 1em 3em;
+	padding: 1em;
 	max-width: 1000px;
 	margin: 0 auto;
 }
@@ -343,6 +347,10 @@ a.pure-button-primary {
 	/* We remove the border-separator assigned to .l-box-lrg */
 	.l-box-lrg {
 		border: none;
+	}
+
+	.anchor {
+		height: 40px;
 	}
 
 	.boxes {
