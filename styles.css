@@ -156,6 +156,10 @@ a.pure-button-primary {
 	white-space: normal;
 }
 
+.home-menu a.pure-menu-main-link {
+	pointer-events: none;
+}
+
 .home-menu li a:hover,
 .home-menu li a:focus {
 	background: none;
