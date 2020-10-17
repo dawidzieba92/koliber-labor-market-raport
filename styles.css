@@ -24,9 +24,21 @@ label {
 	color: #34495e;
 }
 
+a {
+	color: #7f8c8d;
+}
+
+a:hover {
+	color: #343535;
+}
+
 .pure-img-responsive {
 	max-width: 100%;
 	height: auto;
+}
+
+.small-text {
+	font-size: 0.8em;
 }
 
 /*
@@ -249,9 +261,13 @@ a.pure-button-primary {
 /* This is the class used for the footer */
 .footer {
 	background: #111;
-	position: fixed;
 	bottom: 0;
 	width: 100%;
+}
+
+.footer p{ 
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .boxes {
@@ -271,6 +287,14 @@ a.pure-button-primary {
 	padding: 10px;
 	background-color: #342f2c;
 	height: 100px;
+}
+
+.social-media {
+	font-size: 3em;
+	margin-bottom: 30px;
+}
+.social-media i{ 
+	margin-right: 20px;
 }
 
 /*
@@ -319,6 +343,18 @@ a.pure-button-primary {
 
 	.boxes {
 		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	.ministry {
+		line-height: 1.5em;
+		font-size: 0.6em;
+		text-align: left;
+	}
+
+	.ministry-logo {
+		max-width: 320px;
+		float: left;
+		margin-right: 20px;
 	}
 
 }
