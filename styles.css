@@ -24,9 +24,21 @@ label {
 	color: #34495e;
 }
 
+a {
+	color: #7f8c8d;
+}
+
+a:hover {
+	color: #343535;
+}
+
 .pure-img-responsive {
 	max-width: 100%;
 	height: auto;
+}
+
+.small-text {
+	font-size: 0.8em;
 }
 
 /*
@@ -50,6 +62,9 @@ label {
 	text-align: right;
 }
 
+.anchor {
+	height: 30px;
+}
 
 /*
  * -- PURE FORM STYLES --
@@ -94,14 +109,12 @@ a.pure-button-primary {
  */
 
 .home-menu {
-	position: relative;
+	position: fixed;
 	padding: 0.5em;
 	text-align: center;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
-}
-
-.home-menu {
 	background: #2d3e50;
+	height: 45px;
 }
 
 .pure-menu.pure-menu-fixed {
@@ -120,12 +133,14 @@ a.pure-button-primary {
 	left: auto;
 	right: 0;
 	max-width: 350px;
+	border: 1px solid #e2e2e2;
 }
 
 .home-menu .pure-menu-heading {
 	color: white;
 	font-weight: 400;
 	font-size: 120%;
+	float: left
 }
 
 .home-menu .pure-menu-list {
@@ -139,6 +154,10 @@ a.pure-button-primary {
 .home-menu a {
 	color: #6FBEF3;
 	white-space: normal;
+}
+
+.home-menu a.pure-menu-main-link {
+	pointer-events: none;
 }
 
 .home-menu li a:hover,
@@ -155,7 +174,8 @@ a.pure-button-primary {
  */
 
 .splash-container {
-	background: #1f8dd6;
+	background: url('./images/grupa_ludzi.jpg');
+	background-size: cover;
 	z-index: 1;
 	overflow: hidden;
 	/* The following styles are required for the "scroll-over" effect */
@@ -168,8 +188,9 @@ a.pure-button-primary {
 
 .splash {
 	/* absolute center .splash within .splash-container */
+	background-color: rgba(0,0,0, 0.7);
 	width: 80%;
-	height: 50%;
+	height: 55%;
 	margin: auto;
 	position: absolute;
 	top: 0;
@@ -181,6 +202,7 @@ a.pure-button-primary {
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
+	padding: 0 10px;
 	font-weight: bold;
 	color: white;
 	font-weight: 100;
@@ -189,6 +211,7 @@ a.pure-button-primary {
 
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
+	padding: 0 10px;
 	color: white;
 	letter-spacing: 0.05em;
 	opacity: 0.8;
@@ -211,7 +234,7 @@ a.pure-button-primary {
 
 /* We want to give the content area some more padding */
 .content {
-	padding: 1em 1em 3em;
+	padding: 1em;
 	max-width: 1000px;
 	margin: 0 auto;
 }
@@ -249,9 +272,13 @@ a.pure-button-primary {
 /* This is the class used for the footer */
 .footer {
 	background: #111;
-	position: fixed;
 	bottom: 0;
 	width: 100%;
+}
+
+.footer p{ 
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .boxes {
@@ -273,6 +300,14 @@ a.pure-button-primary {
 	height: 100px;
 }
 
+.social-media {
+	font-size: 3em;
+	margin-bottom: 30px;
+}
+.social-media i{ 
+	margin-right: 20px;
+}
+
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some
@@ -289,6 +324,7 @@ a.pure-button-primary {
     menu items to the right. */
 	.home-menu {
 		text-align: left;
+		height: 60px;
 	}
 
 	.home-menu ul {
@@ -317,8 +353,24 @@ a.pure-button-primary {
 		border: none;
 	}
 
+	.anchor {
+		height: 40px;
+	}
+
 	.boxes {
 		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	.ministry {
+		line-height: 1.5em;
+		font-size: 0.6em;
+		text-align: left;
+	}
+
+	.ministry-logo {
+		max-width: 320px;
+		float: left;
+		margin-right: 20px;
 	}
 
 }
