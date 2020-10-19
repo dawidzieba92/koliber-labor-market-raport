@@ -30,11 +30,13 @@
 							<a href="#wprowadzenie" class="pure-menu-link">Wprowadzenie</a>
 						</li>
 						<li class="pure-menu-item">
-							<a href="#oczekiwania_ogloszenia" class="pure-menu-link">Oczekiwania pracodawców wobec pracowników w
+							<a href="#oczekiwania_ogloszenia" class="pure-menu-link">Oczekiwania pracodawców wobec
+								pracowników w
 								świetle ogłoszeń rekrutacyjnych</a>
 						</li>
 						<li class="pure-menu-item">
-							<a href="#oczekiwania_ankiety" class="pure-menu-link">Oczekiwania pracodawców wobec pracowników w świetle
+							<a href="#oczekiwania_ankiety" class="pure-menu-link">Oczekiwania pracodawców wobec
+								pracowników w świetle
 								badań ankietyowych</a>
 						</li>
 						<li class="pure-menu-item">
@@ -50,7 +52,8 @@
 		<div class="splash">
 			<h1 class="splash-head">Studenci a wymagania rynku pracy</h1>
 			<p class="splash-subhead">
-				Raport nt. preferencji pracodawców względem umiejętności swoich potencjalnych pracowników młodego pokolenia
+				Raport nt. preferencji pracodawców względem umiejętności swoich potencjalnych pracowników młodego
+				pokolenia
 
 			</p>
 			<p>
@@ -402,7 +405,8 @@
 				Nie odnotowuje się natomiast zdolności, które byłyby wymagane niemal zawsze
 				i wszędzie, w związku z czym katalog ma, szczególnie w drugiej części zestawienia,
 				relatywnie wyrównany, pod względem sumarycznym, charakter. </p>
-			<p>Warto też dodać, iż większość ogłoszeń o pracę na portalu <a href="pracuj.pl">pracuj.pl</a>, mimo filtru na
+			<p>Warto też dodać, iż większość ogłoszeń o pracę na portalu <a href="pracuj.pl">pracuj.pl</a>, mimo filtru
+				na
 				Polskę, była opisana w języku angielskim. Oferowana praca, głównie przez bardzo
 				duże korporacje, miała odbywać się zdalnie albo w biurowcach w dużych miastach.
 				Niektórzy pracodawcy oczekiwali 5 lat doświadczenia, a niekiedy i więcej. Jeden
@@ -1796,6 +1800,7 @@
 	</div>
 
 	<script>
+		var isMobile = window.innerWidth < 768 ? true : false;
 		function generateChart(id, labels, data) {
 			var ctx = document.getElementById(id).getContext('2d');
 			var chart = new Chart(ctx, {
@@ -1820,12 +1825,16 @@
 							}
 						}],
 						yAxes: [{
-							barPercentage: 1
+							barPercentage: 1,
+							ticks: {
+								display: !isMobile
+							}
 						}]
 					},
 					legend: {
 						display: false
-					}
+					},
+
 				}
 			});
 		}
