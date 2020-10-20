@@ -322,12 +322,28 @@ a.pure-button-primary {
 	height: 100px;
 }
 
+.ministry {
+	padding-top: 25px;
+}
+.ministry-logo {
+	float: left;
+	margin-right: 20px;
+}
+
 .social-media {
-	font-size: 3em;
+	font-size: 2.5em;
 	margin-bottom: 30px;
 }
+.social-media a:hover, .social-media a:hover img{
+	color: #7f8c8d;
+	opacity: 0.4;
+}
 .social-media i{ 
-	margin-right: 20px;
+	margin-right: 15px;
+}
+.social-media img{
+	margin-bottom: -7px;
+    height: 40px;
 }
 
 /*
@@ -391,12 +407,6 @@ a.pure-button-primary {
 		line-height: 1.5em;
 		font-size: 0.6em;
 		text-align: left;
-	}
-
-	.ministry-logo {
-		max-width: 320px;
-		float: left;
-		margin-right: 20px;
 	}
 
 }
